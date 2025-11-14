@@ -484,7 +484,7 @@ Before beginning Unit 6, students should:
 
 * [ ] Linux system access (VM or container)
 * [ ] STIG Viewer 2.18 downloaded
-* [ ] Comfortable with text editors (vim/nano)
+* [ ] Comfortable with text editors (`vim`/`nano`)
 * [ ] Basic networking knowledge
 * [ ] Familiarity with regex patterns
 
