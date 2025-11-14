@@ -35,43 +35,14 @@ If I can't control what software gets onto my systems and how it gets there, I d
 
 By the end of Unit 5, I will:
 
-{% stepper %}
-{% step %}
-### Understand the importance of package integrity and controlled software sources
+{% hint style="info" %}
+**Four Core Competencies**
 
-* Why control over software sources is paramount for security
-* Cryptographic verification of packages (GPG keys)
-* Supply chain security and trusted sources
-* Fit for use vs. fit for warranty concepts
-{% endstep %}
-
-{% step %}
-### Understand patching techniques and routines for enterprise environments
-
-* How enterprise patching differs from desktop "update now"
-* Life cycle engineering and staged deployments
-* Testing methodologies across dev → test → production
-* Risk-based patch prioritization
-{% endstep %}
-
-{% step %}
-### Understand automated methods of patching at scale
-
-* Ansible automation for fleet-scale patch deployment
-* Pre-checks, fact gathering, and validation
-* Reboot management and service verification
-* Rollback capabilities and error handling
-{% endstep %}
-
-{% step %}
-### Understand custom internal package repositories and their management
-
-* Creating ISO-based and RPM-based repositories
-* Sharing repositories over HTTP with Apache
-* Configuring systems to use controlled repo sources
-* EPEL considerations in enterprise environments
-{% endstep %}
-{% endstepper %}
+* **Understand** the importance of package integrity and controlled software sources
+* **Understand** patching techniques and routines for enterprise environments
+* **Understand** automated methods of patching at scale
+* **Understand** custom internal package repositories and their management
+{% endhint %}
 
 <details>
 
