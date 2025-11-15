@@ -28,7 +28,7 @@ This learning experience is about discovering how to secure Linux in a corporate
 * Industry standards
 * Adhering to regulations
 
-Throughout this experience, we'll explore the concepts of **controls:** _their implementation, and how they fit into overall security posture_.
+Throughout this experience, we'll explore the concepts of "**Controls:** _their implementation, and how they fit into overall security posture_."
 
 Well practice to securely build, deploy, integrate, and monitor Linux systems. And standard security documentation & reporting will be emphasized.
 
