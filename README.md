@@ -24,9 +24,9 @@ layout:
 
 This learning experience is about discovering how to secure Linux in a corporate environment focusing on:&#x20;
 
-* Adhering to regulations
 * Best practices
 * Industry standards
+* Adhering to regulations
 
 Throughout this experience, I'll explore the concepts of controls, their implementation, and how they fit into overall security posture.
 
