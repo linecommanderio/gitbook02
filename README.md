@@ -22,7 +22,11 @@ layout:
 
 # 🎓 PSC Learning Journey
 
-This learning experience is about discovering how to secure Linux in a corporate environment. I'm focusing on adhering to regulations, best practices, and industry standards.
+This learning experience is about discovering how to secure Linux in a corporate environment focusing on:&#x20;
+
+* Adhering to regulations
+* Best practices
+* Industry standards
 
 Throughout this experience, I'll explore the concepts of controls, their implementation, and how they fit into overall security posture.
 
