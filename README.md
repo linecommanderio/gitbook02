@@ -96,13 +96,17 @@ Each session builds on previous knowledge—from foundational compliance (Sessio
 
 ## 📖 The Course Referenced
 
-This course contains all materials pertaining to the **ProLUG Security Engineering Course**. It was put together with care by a number of ProLUG group members referencing original instructional materials produced by Scott Champine (Het Tanis).
+Thislearning journey contains all materials pertaining to the **ProLUG Security Engineering Course**.
+
+It was put together with care by a number of ProLUG group members referencing original instructional materials produced by Scott Champine ([Het Tanis](https://youtube.com/playlist?list=PLyuZ_vuAWmpqZcL95P1AOQ57qKf7UnkMF\&si=zwEiyTz6ff3ovTNH)).
 
 <details>
 
 <summary>🎓 Course Design Philosophy</summary>
 
-This course is designed to promote learner-centered activities and support the development of Linux security skills. The course utilizes:
+This course is designed to promote learner-centered activities and the development of Linux security skills.
+
+The course utilizes:
 
 * **Individual and group learning activities**
 * **Performance-driven assignments** with measurable outcomes
@@ -110,7 +114,7 @@ This course is designed to promote learner-centered activities and support the d
 * **Hands-on projects** using enterprise tools and workflows
 * **Collaborative discussions** with peers and instructors
 
-These methods focus on building engaging learning experiences conducive to development of critical knowledge and skills that can be effectively applied in professional contexts.
+These methods focus on building skills that can be effectively applied in professional contexts.
 
 </details>
 
