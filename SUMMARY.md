@@ -3,7 +3,6 @@
 ## ProLUG Security Course
 
 * [🎓 PSC Learning Journey](README.md)
-  * [session2 enhanced (1)](prolug-security-course/psc-learning-journey/session2-enhanced-1.md)
 * [🛡️ Session 1: Build Standards and Compliance](<README (2).md>)
   * [🛠️ Session 1 Labs](prolug-security-course/session-1-build-standards-and-compliance/session-1-labs.md)
 * [🔐 Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection/README.md)
