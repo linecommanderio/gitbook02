@@ -22,7 +22,7 @@ layout:
 
 # 🎓 PSC Learning Journey
 
-This learning experience is about discovering how to secure Linux in a corporate environment focusing on:&#x20;
+This learning experience is about discovering how to secure Linux in a corporate setting focusing on:&#x20;
 
 * Best practices
 * Industry standards
