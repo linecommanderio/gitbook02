@@ -30,7 +30,7 @@ This learning experience is about discovering how to secure Linux in a corporate
 
 Throughout this experience, we'll explore the concepts of "**Controls:** _their implementation, and how they fit into overall security posture_."
 
-We'll practice to securely build, deploy, integrate, and monitor Linux systems. Standard security documentation & reporting will also be emphasized.
+We'll practice to securely build, deploy, integrate, and monitor Linux systems. Standard security documentation & reporting is also be emphasized.
 
 {% hint style="warning" %}
 **What Makes This Different**
