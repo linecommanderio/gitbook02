@@ -14,4 +14,3 @@
 * [Session 6: Monitoring and parsing logs](prolug-security-course/session-6-monitoring-and-parsing-logs/README.md)
   * [Security Unit 6 Discussion Post 1](prolug-security-course/session-6-monitoring-and-parsing-logs/security-unit-6-discussion-post-1.md)
   * [Security Unit 6 Discussion Post 2](prolug-security-course/session-6-monitoring-and-parsing-logs/security-unit-6-discussion-post-2.md)
-* [session2 enhanced (1)](prolug-security-course/session2-enhanced-1.md)
