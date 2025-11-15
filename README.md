@@ -68,7 +68,7 @@ By the end of Session 1, I will have explored:
 
 ***
 
-## 🎯 Labs to Build Here
+## 🛠️ Labs to Build Here
 
 {% stepper %}
 {% step %}
