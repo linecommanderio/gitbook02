@@ -3,7 +3,7 @@
 ## ProLUG Security Course
 
 * [🛡️ Session 1: Build Standards and Compliance](README.md)
-  * [lab\_overview](prolug-security-course/session-1-build-standards-and-compliance/lab_overview.md)
+  * [🛠️ Labs to Build Here](prolug-security-course/session-1-build-standards-and-compliance/labs-to-build-here.md)
 * [Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection.md)
 * [Session 5: Updating systems and patch cycles](<README (1).md>)
   * [Security Unit 5 Discussion Post 1](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-1.md)
