@@ -3,7 +3,7 @@ cover: .gitbook/assets/sess1-ezgif.webp
 coverY: 0
 coverHeight: 241
 layout:
-  width: default
+  width: wide
   cover:
     visible: true
     size: full

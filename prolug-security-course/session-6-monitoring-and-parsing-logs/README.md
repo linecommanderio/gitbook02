@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/sess66-ezgif.webp
+cover: broken-reference
 coverY: 0
 coverHeight: 238
 layout:
