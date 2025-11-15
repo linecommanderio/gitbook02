@@ -15,25 +15,54 @@ layout:
     visible: true
 ---
 
-# Session 1: Build Standards and Compliance
+# session01 gb
 
 ## Overview
 
-Building standards and compliance in cybersecurity engineering ensures systems adhere to industry best practices, regulatory requirements, and security frameworks—reducing organizational risk and vulnerability exposure.
+_**Standards**_ and _**Compliance**_ keep systems locked down and audit-ready—reducing risk while meeting regulatory requirements. This session is about exploring how to implement real security controls using the industry frameworks that actually matter:&#x20;
 
-This unit focuses on structured security implementation through industry-standard tools and frameworks: **STIGs** (Security Technical Implementation Guides), **CIS Controls**, and the **NIST Cybersecurity Framework**. Students will learn to maintain system resilience against evolving threats while ensuring accountability and regulatory alignment.
+* **STIGs (Security Technical Implementation Guide)**
+* **NIST (National Institute of Standards and Technology) Cybersecurity Framework**.
+* **CIS (Center for Internet Security) Controls** _(formerly known as Critical Security Controls)_
+
+
+
+I'm documenting how to harden systems against threats while maintaining the documentation and accountability that compliance teams need.
 
 {% hint style="info" %}
-**Enterprise Context**
+**Enterprise Context** Here's what I've learned about working in corporate environments: _**you're not operating in isolation**_. The security implementations and documentation you create directly feed into **Governance, Risk, and Compliance (GRC)** workflows.&#x20;
 
-You'll secure Linux systems in corporate environments where your work directly impacts organizational security posture. As a Linux engineer, you'll collaborate with **Governance, Risk, and Compliance (GRC)** teams—your technical implementations and documentation enable their compliance reporting and risk management.
+
+
+> **Translation**: _the controls you configure and the evidence you document enable their compliance reporting and risk assessments._
 {% endhint %}
 
-Hands-on practice begins immediately with real enterprise services like **MariaDB**, applying security controls in production-equivalent scenarios.
+
+
+Getting straight to the hands-on, by applying these security controls to production-equivalent services like **MariaDB** to see how they work in practice.
 
 ***
 
-## 🎯 What Labs You'll Build This Week
+## 📚 Learning Objectives
+
+By the end of Session 1, I will have explored:
+
+{% tabs %}
+{% tab title="Core Competencies" %}
+1. **Security Frameworks**: STIGs, CIS Controls, NIST Cybersecurity Framework
+2. **Regulatory Compliance**: Industry standards for system administration and deployment
+3. **STIG Remediation**: Hands-on security control implementation and validation
+{% endtab %}
+
+{% tab title="Professional Skills" %}
+4. **Risk Management**: Understanding and addressing organizational risk vectors
+5. **Documentation**: Security reporting practices for compliance teams
+{% endtab %}
+{% endtabs %}
+
+***
+
+## 🎯 Labs to Build Here
 
 {% stepper %}
 {% step %}
@@ -95,41 +124,25 @@ STIG Viewer is the **industry-standard tool** for government and high-security e
 
 **Implement hands-on security controls on live database infrastructure**
 
-Real-world security engineering workflow implemented as a sequence:
+Real-world security engineering workflow:
 
 {% stepper %}
 {% step %}
 ### Deploy MariaDB
 
-Secure installation procedures and service deployment.
-
-{% code overflow="wrap" %}
-```bash
-dnf install mariadb-server
-systemctl start mariadb
-systemctl status mariadb
-ss -ntulp | grep 3306
-```
-{% endcode %}
+Deploy MariaDB with secure installation procedures.
 {% endstep %}
 
 {% step %}
 ### Analyze Security Gaps
 
-Compare the deployment against STIG benchmark requirements to identify gaps.
-
-{% code overflow="wrap" %}
-```sql
--- Example STIG check query
-SELECT user, max_user_connections FROM mysql.user;
-```
-{% endcode %}
+Analyze security gaps using STIG benchmark requirements.
 {% endstep %}
 
 {% step %}
 ### Remediate Critical Findings
 
-Address and remediate benchmark findings, examples include:
+Remediate critical findings such as:
 
 * v-253666: User connection limit controls
 * v-253677: Authentication security policies
@@ -140,17 +153,41 @@ Address and remediate benchmark findings, examples include:
 {% step %}
 ### Validate Implementation
 
-Verify remediations with SQL queries and system checks.
+Validate implementation using SQL queries and system verification.
+{% endstep %}
+{% endstepper %}
 
-{% code overflow="wrap" %}
+{% tabs %}
+{% tab title="Installation" %}
+{% code title="installation.sh" %}
+```bash
+dnf install mariadb-server
+systemctl start mariadb
+systemctl status mariadb
+ss -ntulp | grep 3306
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="STIG Validation" %}
+{% code title="stig-check.sql" %}
+```sql
+-- Example STIG check query
+SELECT user, max_user_connections FROM mysql.user;
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Verification" %}
+{% code title="verification.sh" %}
 ```bash
 # Confirm security controls active
 systemctl status mariadb
 mysql -e "SHOW VARIABLES LIKE '%connection%';"
 ```
 {% endcode %}
-{% endstep %}
-{% endstepper %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="success" %}
 **✅ Outcome**: Hardened database service meeting enterprise security standards with documented compliance evidence
@@ -163,27 +200,8 @@ mysql -e "SHOW VARIABLES LIKE '%connection%';"
 
 These labs mirror actual enterprise security engineering workflows—from baseline assessment through compliance validation to production hardening. You'll document findings, implement fixes, and verify remediation using the same tools and processes required in government and corporate environments.
 
-**Career Impact**: Add "STIG remediation experience" and "DoD security compliance implementation" to your resume.
+> **Career Impact**: _Add "STIG remediation experience" and "DoD security compliance implementation" to your resume._
 {% endhint %}
-
-***
-
-## 📚 Learning Objectives
-
-By the end of Unit 1, students will demonstrate competency in:
-
-{% tabs %}
-{% tab title="Core Competencies" %}
-1. **Security Frameworks**: STIGs, CIS Controls, NIST Cybersecurity Framework
-2. **Regulatory Compliance**: Industry standards for system administration and deployment
-3. **STIG Remediation**: Hands-on security control implementation and validation
-{% endtab %}
-
-{% tab title="Professional Skills" %}
-4. **Risk Management**: Understanding and addressing organizational risk vectors
-5. **Documentation**: Security reporting practices for compliance teams
-{% endtab %}
-{% endtabs %}
 
 ***
 
@@ -197,29 +215,50 @@ As administrators of sensitive data and critical systems, we carry both **ethica
 
 **Success requires thorough understanding of**:
 
-* The cybersecurity threat landscape
-* Available security tools and frameworks
-* Implementation methodologies
-* Documentation and reporting requirements
+* **The CIA Triad**: Confidentiality, Integrity, and Availability as foundational security principles
+* **Security Control Types**: Administrative, technical, and physical controls working in concert
+* **Risk Management Frameworks**: NIST RMF and quantitative/qualitative risk assessment methodologies
+* **Regulatory Standards**: HIPAA, PCI/DSS, and industry-specific compliance requirements
+* **Implementation methodologies** and documentation standards
 
 #### Enterprise Impact
 
 **These concepts enable you to**:
 
-* Structure resilient security postures
-* Reduce system attack surfaces systematically
-* Implement comprehensive logging and monitoring
-* Prepare proper incident documentation
-* Collaborate effectively with security operations teams
+* **Structure resilient security postures** using defense-in-depth principles
+* **Reduce system attack surfaces** systematically through STIG compliance and benchmarking
+* **Implement comprehensive monitoring** with proper logging and incident documentation
+* **Make risk-informed decisions** using ALE (Annual Loss Expectancy), SLE (Single Loss Expectancy), and ARO (Annual Rate of Occurrence)
+* **Collaborate effectively** with security operations teams through clear documentation
+
+#### Critical Thinking in Security
+
+Security engineering requires **evaluating and defending technical decisions**. You'll practice:
+
+* Analyzing STIG requirements to understand their protective intent
+* Identifying control categories (preventive, detective, corrective, compensating)
+* Defending implementation choices with risk-based justifications
+* Understanding the relationship between authority, will, and force in security enforcement
 {% endcolumn %}
 
 {% column %}
 {% hint style="success" %}
 **Career Skills**
 
-Even in engineering roles outside dedicated security teams, your work fundamentally affects organizational security. You'll build systems that operate 24/7—requiring robust monitoring and handoff protocols to security and network operations teams.
+I'm learning that even in engineering roles outside dedicated security teams, my work fundamentally affects organizational security. I'm building systems that operate 24/7—which means I need to understand robust monitoring and handoff protocols to security and network operations teams.
 
-**Documentation matters**: GRC teams depend on your security implementation reports to maintain compliance and manage organizational risk.
+**Documentation matters**: GRC teams depend on my security implementation reports to maintain compliance and manage organizational risk.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+**Key Resources**
+
+* **NIST Risk Management Framework**: [csrc.nist.gov/projects/risk-management](https://csrc.nist.gov/projects/risk-management/about-rmf)
+* **SANS Security Policies**: Industry-standard templates and best practices
+* **OpenSCAP**: Automated compliance scanning and validation
+* **Cyber.mil**: Official DISA STIG repository
+
+**Professional Development**: Understanding these frameworks positions you for roles requiring security clearances and government compliance expertise.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -234,8 +273,10 @@ Even in engineering roles outside dedicated security teams, your work fundamenta
 Students must possess Linux Administration competencies including:
 
 * **Command Line Proficiency**: BASH shell operations and scripting
-* **Package Management**: Installing and updating system packages via `dnf`/`yum`
+* **Package Management**: Installing and updating system packages via DNF/YUM
 * **System Tools**: `systemctl`, `mount`, `grep`, `ss`, and related utilities
 * **Database Operations**: Basic SQL queries using MariaDB
 * **Required Software**: STIG Viewer v2.18 (latest version)
 {% endhint %}
+
+***
