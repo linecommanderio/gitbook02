@@ -2,7 +2,8 @@
 
 ## ProLUG Security Course
 
-* [🛡️ Session 1: Build Standards and Compliance](README.md)
+* [🎓 PSC Learning Journey](README.md)
+* [🛡️ Session 1: Build Standards and Compliance](<README (2).md>)
   * [🛠️ Labs to Build Here](prolug-security-course/session-1-build-standards-and-compliance/labs-to-build-here.md)
 * [Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection.md)
 * [Session 5: Updating systems and patch cycles](<README (1).md>)
