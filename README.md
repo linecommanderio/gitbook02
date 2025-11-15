@@ -2,7 +2,7 @@
 cover: .gitbook/assets/intro-ezgif.webp
 coverY: 0
 layout:
-  width: default
+  width: wide
   cover:
     visible: true
     size: full
@@ -50,33 +50,12 @@ By the end of this jurney, we will be able to:
 
 {% hint style="success" %}
 1. **🏗️ Build and configure** a Linux system to adhere to compliance frameworks
-
-
-
 2. **🌐 Integrating Linux** to a network in a secure fashion
-
-
-
 3. **🔑 Integrating Linux** with Enterprise Identity and Access Management (IAM) frameworks
-
-
-
 4. **🏰 Implement User ingress controls** to a system/network with bastion frameworks
-
-
-
 5. **🔄 Updating Linux** to resolve security vulnerabilities and reporting out to security teams
-
-
-
 6. **📤 Design logging workflows** to move event logging off of systems for real time monitoring
-
-
-
 7. **👁️ Monitoring and alerting** on events in Linux
-
-
-
 8. **🎯 Maintaining system** configuration drift and remediation
 {% endhint %}
 
