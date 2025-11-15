@@ -1,6 +1,12 @@
 ---
+cover: ../../.gitbook/assets/sess66-ezgif.webp
+coverY: 0
+coverHeight: 238
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -16,8 +22,6 @@ layout:
 ---
 
 # Session 6: Monitoring and parsing logs
-
-<figure><img src="../../.gitbook/assets/sess66-ezgif.webp" alt=""><figcaption></figcaption></figure>
 
 Monitoring and parsing logs is one of the most essential security engineering practices in any production environment.
 

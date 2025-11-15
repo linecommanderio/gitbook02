@@ -15,189 +15,227 @@ layout:
     visible: true
 ---
 
-# Session 5: Updating systems and patch cycles
+# Session 1: Build Standards and Compliance
 
 ## Overview
 
-Where software originates—and how and when it is updated (patched)—is essential to maintaining system stability and security. Every patch applied to a system must come from a known and trusted source, as introducing changes into a stable environment can have significant consequences. Administrators and engineers ensure that patching is planned and scheduled using verified, trackable repositories and resources.
+Building standards and compliance in cybersecurity engineering ensures systems adhere to industry best practices, regulatory requirements, and security frameworks—reducing organizational risk and vulnerability exposure.
 
-In this unit, I will examine how this process is implemented in adjacent distributions, where administrators can apply granular control to Red Hat Package Manager (RPM) packages and maintain internal repositories of vetted packages.
+This unit focuses on structured security implementation through industry-standard tools and frameworks: **STIGs** (Security Technical Implementation Guides), **CIS Controls**, and the **NIST Cybersecurity Framework**. Students will learn to maintain system resilience against evolving threats while ensuring accountability and regulatory alignment.
 
-{% hint style="warning" %}
-**Control is Everything**
+{% hint style="info" %}
+**Enterprise Context**
 
-If I can't control what software gets onto my systems and how it gets there, I don't have a security posture—I have hope. Control over software sources is the foundation of system stability and security.
+You'll secure Linux systems in corporate environments where your work directly impacts organizational security posture. As a Linux engineer, you'll collaborate with **Governance, Risk, and Compliance (GRC)** teams—your technical implementations and documentation enable their compliance reporting and risk management.
 {% endhint %}
+
+Hands-on practice begins immediately with real enterprise services like **MariaDB**, applying security controls in production-equivalent scenarios.
 
 ***
 
-## 🎯 Learning Objectives
+## 🎯 What You'll Build This Week
 
-By the end of Unit 5, I will:
+{% stepper %}
+{% step %}
+#### 🔍 System Security Baseline Assessment
 
-{% hint style="info" %}
-**Four Core Competencies**
+**Discover your system's current security posture**
 
-* **🔐 Understand** the importance of package integrity and controlled software sources
-* 🔧 **Understand** patching techniques and routines for enterprise environments
-* ⚙️ **Understand** automated methods of patching at scale
-* 📦 **Understand** custom internal package repositories and their management
+Analyze critical security configurations by examining:
+
+* **Filesystem Security**: Mount options (`noexec`, `nodev`, `nosuid`) preventing privilege escalation attacks
+* **Network Configuration**: IPv4/IPv6 forwarding rules, routing capabilities, and interface hardening
+* **Firewall Infrastructure**: Packet filtering tables and network isolation mechanisms
+
+{% code overflow="wrap" %}
+```bash
+# Assessment commands you'll master
+mount | grep -i noexec
+sysctl -a | grep -i ipv4 | grep -i forward
+lsmod | grep -i tables
+```
+{% endcode %}
+
+{% hint style="success" %}
+**✅ Outcome**: Comprehensive understanding of existing system security controls and potential vulnerabilities
 {% endhint %}
+{% endstep %}
+
+{% step %}
+#### 🛠️ STIG Compliance Toolkit Setup
+
+**Build your security assessment environment**
+
+Configure industry-standard security tools:
+
+* **Install STIG Viewer 2.18**: Official DoD security assessment and validation tool
+* **Import Security Benchmarks**: MariaDB STIG for database-specific compliance validation
+* **Establish Professional Workflow**: Review → Remediate → Document → Verify
 
 <details>
 
-<summary>📋 Detailed Breakdown: What Each Objective Covers</summary>
+<summary>📋 Why STIG Viewer Matters</summary>
 
-**1. Package Integrity & Control**
+STIG Viewer is the **industry-standard tool** for government and high-security enterprise environments. Learning this tool makes you immediately productive in:
 
-* Why control over software sources is paramount for security
-* Cryptographic verification of packages (GPG keys)
-* Supply chain security and trusted sources
-* Fit for use vs. fit for warranty concepts
-
-**2. Patching Techniques & Routines**
-
-* How enterprise patching differs from desktop "update now"
-* Life cycle engineering and staged deployments
-* Testing methodologies across dev → test → production
-* Risk-based patch prioritization
-
-**3. Automated Patching Methods**
-
-* Ansible automation for fleet-scale patch deployment
-* Pre-checks, fact gathering, and validation
-* Reboot management and service verification
-* Rollback capabilities and error handling
-
-**4. Custom Internal Repositories**
-
-* Creating ISO-based and RPM-based repositories
-* Sharing repositories over HTTP with Apache
-* Configuring systems to use controlled repo sources
-* EPEL considerations in enterprise environments
+* DoD contractor positions
+* Federal government IT roles
+* Fortune 500 security engineering teams
+* Compliance-heavy industries (finance, healthcare, defense)
 
 </details>
 
-***
+{% hint style="success" %}
+**✅ Outcome**: Production-ready security compliance assessment capability using enterprise tools
+{% endhint %}
+{% endstep %}
 
-## 🔍 Relevance and Context
+{% step %}
+#### 🔐 MariaDB Security Hardening
+
+**Implement hands-on security controls on live database infrastructure**
+
+Real-world security engineering workflow implemented as a sequence:
+
+{% stepper %}
+{% step %}
+### Deploy MariaDB
+
+Secure installation procedures and service deployment.
+
+{% code overflow="wrap" %}
+```bash
+dnf install mariadb-server
+systemctl start mariadb
+systemctl status mariadb
+ss -ntulp | grep 3306
+```
+{% endcode %}
+{% endstep %}
+
+{% step %}
+### Analyze Security Gaps
+
+Compare the deployment against STIG benchmark requirements to identify gaps.
+
+{% code overflow="wrap" %}
+```sql
+-- Example STIG check query
+SELECT user, max_user_connections FROM mysql.user;
+```
+{% endcode %}
+{% endstep %}
+
+{% step %}
+### Remediate Critical Findings
+
+Address and remediate benchmark findings, examples include:
+
+* v-253666: User connection limit controls
+* v-253677: Authentication security policies
+* v-253678: Access control mechanisms
+* v-253734: Database security configurations
+{% endstep %}
+
+{% step %}
+### Validate Implementation
+
+Verify remediations with SQL queries and system checks.
+
+{% code overflow="wrap" %}
+```bash
+# Confirm security controls active
+systemctl status mariadb
+mysql -e "SHOW VARIABLES LIKE '%connection%';"
+```
+{% endcode %}
+{% endstep %}
+{% endstepper %}
 
 {% hint style="success" %}
-**Security Engineering Foundation**
+**✅ Outcome**: Hardened database service meeting enterprise security standards with documented compliance evidence
+{% endhint %}
+{% endstep %}
+{% endstepper %}
 
-For security engineers, controlling the origin and integrity of software updates is a foundational practice for minimizing attack surfaces. Repository control isn't just convenience—it's a security function.
+{% hint style="warning" %}
+**🎓 Professional Development**
+
+These labs mirror actual enterprise security engineering workflows—from baseline assessment through compliance validation to production hardening. You'll document findings, implement fixes, and verify remediation using the same tools and processes required in government and corporate environments.
+
+**Career Impact**: Add "STIG remediation experience" and "DoD security compliance implementation" to your resume.
 {% endhint %}
 
-### Why This Matters
-
-Think of repository management like a bastion host for software. Just as I control who can access systems through a bastion, I control what software can enter systems through controlled repositories.
-
-**In enterprise environments:**
-
-* 🏢 Air-gapped systems require local repositories (government, classified environments)
-* 🔒 Controlled entry points prevent unauthorized software
-* 📋 Auditable changes maintain compliance and security posture
-* ⚖️ Staged deployments protect production systems from untested changes
-
-By managing internal repositories and applying strict control over RPM packages, organizations can:
-
-| Capability                           | Security Benefit                             |
-| ------------------------------------ | -------------------------------------------- |
-| 📦 **Enforce compliance**            | Ensure only approved packages enter systems  |
-| 🛡️ **Prevent supply chain attacks** | Control and verify all software sources      |
-| 🔒 **Audit software provenance**     | Track complete history of installed packages |
-| ✅ **Maintain production integrity**  | Only trusted, vetted software in production  |
-
 ***
 
-## 🏗️ What I'll Build This Week
+## 📚 Learning Objectives
 
-This unit has two major hands-on components:
-
-**1. Build and Manage Repositories**
-
-* Create local repositories from ISO files
-* Share repositories over HTTP using Apache
-* Configure systems to use controlled repo sources
-* Understand repository metadata and structure
-
-**2. Enterprise Patching Framework**
-
-* Implement automated patching with Ansible
-* Manage fleet-scale updates (hundreds to thousands of systems)
-* Control patching life cycles across environments
-* Handle pre-checks, validation, and reboots
-
-***
-
-## 💡 Key Concepts I'll Learn
-
-### Fit for Use vs. Fit for Warranty
+By the end of Unit 1, students will demonstrate competency in:
 
 {% tabs %}
-{% tab title="✅ Fit for Use" %}
-**The Engineer's Checklist**
-
-Fit for use is about initial functionality—does it work right now?
-
-For a web server:
-
-* ✅ Is the server serving?
-* ✅ Is it running on ports 80 and 443?
-* ✅ Is it serving from the correct document root?
-* ✅ Does it respond to requests?
-
-**Engineers love this**: Check, check, check, check. Nice and structured.
+{% tab title="Core Competencies" %}
+1. **Security Frameworks**: STIGs, CIS Controls, NIST Cybersecurity Framework
+2. **Regulatory Compliance**: Industry standards for system administration and deployment
+3. **STIG Remediation**: Hands-on security control implementation and validation
 {% endtab %}
 
-{% tab title="🏆 Fit for Warranty" %}
-**The Weekend Test**
-
-Fit for warranty is about sustained operational excellence:
-
-**Do I bet my weekend that this won't fail?**
-
-* Will it handle the 5,001st connection?
-* Will it keep serving under load?
-* Will it continue working without intervention?
-* Am I confident enough to go home?
-
-**This is what matters**: A system might pass all initial checks but fail under real-world conditions.
+{% tab title="Professional Skills" %}
+4. **Risk Management**: Understanding and addressing organizational risk vectors
+5. **Documentation**: Security reporting practices for compliance teams
 {% endtab %}
 {% endtabs %}
 
 ***
 
-### Enterprise Patching vs. Desktop "Update Now"
+## 🎯 Relevance & Context
 
-| Desktop Patching                 | Enterprise Patching                       |
-| -------------------------------- | ----------------------------------------- |
-| Click "Update Now"               | Inventory 980+ systems before starting    |
-| Single device                    | Fleet of hundreds/thousands               |
-| Hope it works                    | Controlled life cycle across environments |
-| Reboot when convenient           | Scheduled maintenance windows             |
-| One-off process                  | Automated orchestration required          |
-| Minimal testing                  | Dev → Test → QA → Staging → Production    |
-| Personal inconvenience if broken | Business-critical impact if broken        |
+{% columns %}
+{% column width="60%" %}
+#### Your Professional Responsibility
 
-{% hint style="info" %}
-**The Fundamental Difference**
+As administrators of sensitive data and critical systems, we carry both **ethical and legal obligations** to protect organizational assets from malicious actors.
 
-One-off patching is "click and hope." Enterprise patching is about inventory management, state tracking, controlled life cycles, staged deployments, comprehensive testing, and automated orchestration across hundreds or thousands of systems.
+**Success requires thorough understanding of**:
+
+* The cybersecurity threat landscape
+* Available security tools and frameworks
+* Implementation methodologies
+* Documentation and reporting requirements
+
+#### Enterprise Impact
+
+**These concepts enable you to**:
+
+* Structure resilient security postures
+* Reduce system attack surfaces systematically
+* Implement comprehensive logging and monitoring
+* Prepare proper incident documentation
+* Collaborate effectively with security operations teams
+{% endcolumn %}
+
+{% column %}
+{% hint style="success" %}
+**Career Skills**
+
+Even in engineering roles outside dedicated security teams, your work fundamentally affects organizational security. You'll build systems that operate 24/7—requiring robust monitoring and handoff protocols to security and network operations teams.
+
+**Documentation matters**: GRC teams depend on your security implementation reports to maintain compliance and manage organizational risk.
 {% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
-## 📚 Prerequisites
+## ✅ Prerequisites
 
-To be successful, I should have a working understanding of:
+{% hint style="warning" %}
+**📋 Required Foundation**
 
-{% hint style="info" %}
-**Required Foundation Skills**
+Students must possess Linux Administration competencies including:
 
-* ✅ Basic directory navigation in Linux
-* ✅ Ability to edit and manage configuration files
-* ✅ Basic knowledge of STIG (Security Technical Implementation Guides)
-* ✅ Basic knowledge of Ansible automation
-* ✅ Understanding of network concepts (HTTP, client-server)
+* **Command Line Proficiency**: BASH shell operations and scripting
+* **Package Management**: Installing and updating system packages via `dnf`/`yum`
+* **System Tools**: `systemctl`, `mount`, `grep`, `ss`, and related utilities
+* **Database Operations**: Basic SQL queries using MariaDB
+* **Required Software**: STIG Viewer v2.18 (latest version)
 {% endhint %}
