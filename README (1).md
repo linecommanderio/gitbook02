@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Session 5: Updating systems and patch cycles
+# 📶 Session 5: Updating systems and patch cycles
 
 ## Overview
 

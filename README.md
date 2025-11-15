@@ -49,14 +49,14 @@ Every session builds hands-on skills that translate directly to professional sec
 By the end of this jurney, we will be able to:
 
 {% hint style="success" %}
-1. **🏗️ Build and configure** a Linux system to adhere to compliance frameworks
-2. **🌐 Integrating Linux** to a network in a secure fashion
-3. **🔑 Integrating Linux** with Enterprise Identity and Access Management (IAM) frameworks
+1. 🛠️ **Build and configure** a Linux system to adhere to compliance frameworks
+2. 🛜 **Integrating Linux** to a network in a secure fashion
+3. &#x20;🪪 **Integrating Linux** with Enterprise Identity and Access Management (IAM) frameworks
 4. **🏰 Implement User ingress controls** to a system/network with bastion frameworks
 5. **🔄 Updating Linux** to resolve security vulnerabilities and reporting out to security teams
-6. **📤 Design logging workflows** to move event logging off of systems for real time monitoring
-7. **👁️ Monitoring and alerting** on events in Linux
-8. **🎯 Maintaining system** configuration drift and remediation
+6. 📜 **Design logging workflows** to move event logging off of systems for real time monitoring
+7. 🚨 **Monitoring and alerting** on events in Linux
+8. ⚠️ **Maintaining system** configuration drift and remediation
 {% endhint %}
 
 ***
@@ -72,7 +72,7 @@ By the end of this jurney, we will be able to:
 * **Updating Systems and Patch Cycles** — Vulnerability management, security update workflows
 {% endtab %}
 
-{% tab title="🧠 Advanced Topics" %}
+{% tab title="🚀 Advanced Topics" %}
 * **Monitoring and Parsing Logs** — Centralized logging, event aggregation, log analysis
 * **Monitoring and Alerting** — Real-time threat detection, automated response systems
 * **Configuration Drift and Remediation** — Infrastructure as code, compliance automation
