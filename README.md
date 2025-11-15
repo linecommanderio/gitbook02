@@ -35,7 +35,7 @@ We'll practice to securely build, deploy, integrate, and monitor Linux systems. 
 {% hint style="warning" %}
 **What Makes This Different**
 
-This isn't just theory—I'm working with the same compliance frameworks, security tools, and hardening procedures used in government and enterprise environments.&#x20;
+We're working with the same compliance frameworks, security tools, and hardening procedures used in government and enterprise environments.&#x20;
 
 
 
