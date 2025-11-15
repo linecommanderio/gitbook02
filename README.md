@@ -46,7 +46,7 @@ By the end of Unit 5, I will:
 
 <details>
 
-<summary>📋 What Each Objective Covers (expanded)</summary>
+<summary>📋 Detailed Breakdown: What Each Objective Covers</summary>
 
 **1. Package Integrity & Control**
 
