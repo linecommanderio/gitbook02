@@ -1,6 +1,12 @@
 ---
+cover: .gitbook/assets/sess1-ezgif.webp
+coverY: 0
+coverHeight: 324
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,7 +21,7 @@ layout:
     visible: true
 ---
 
-# session01 gb
+# 🛡️ Session 1: Build Standards and Compliance
 
 ## Overview
 
