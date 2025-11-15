@@ -38,10 +38,10 @@ By the end of Unit 5, I will:
 {% hint style="info" %}
 **Four Core Competencies**
 
-* **Understand** the importance of package integrity and controlled software sources
-* **Understand** patching techniques and routines for enterprise environments
-* **Understand** automated methods of patching at scale
-* **Understand** custom internal package repositories and their management
+* **🔐 Understand** the importance of package integrity and controlled software sources
+* 🔧 **Understand** patching techniques and routines for enterprise environments
+* ⚙️ **Understand** automated methods of patching at scale
+* 📦 **Understand** custom internal package repositories and their management
 {% endhint %}
 
 <details>
