@@ -4,8 +4,9 @@
 
 * [🎓 PSC Learning Journey](README.md)
 * [🛡️ Session 1: Build Standards and Compliance](<README (2).md>)
-  * [🛠️ Labs to Build Here](prolug-security-course/session-1-build-standards-and-compliance/labs-to-build-here.md)
-* [Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection.md)
+  * [🛠️ Session 1 Labs](prolug-security-course/session-1-build-standards-and-compliance/session-1-labs.md)
+* [🔐 Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection/README.md)
+  * [🛠️ Session 2 Labs](prolug-security-course/session-2-securing-the-network-connection/session-2-labs.md)
 * [Session 5: Updating systems and patch cycles](<README (1).md>)
   * [Security Unit 5 Discussion Post 1](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-1.md)
   * [Security Unit 5 Discussion Post 2](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-2.md)

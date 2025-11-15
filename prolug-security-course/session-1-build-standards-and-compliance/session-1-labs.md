@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# 🛠️ Labs to Build Here
+# 🛠️ Session 1 Labs
 
 I'm building three progressively complex labs that take me from security assessment through compliance tooling to production hardening. This isn't theoretical—I'm working with the same tools and workflows used in DoD, federal, and enterprise environments.
 
@@ -25,7 +25,7 @@ The progression mirrors real-world security engineering:
 
 <summary>🔍 Assess</summary>
 
-Discover the system's current security baseline by examining filesystem protections, network configurations, and firewall infrastructure.
+> Discover the system's current security baseline by examining filesystem protections, network configurations, and firewall infrastructure.
 
 </details>
 
@@ -33,7 +33,7 @@ Discover the system's current security baseline by examining filesystem protecti
 
 <summary>⚙️ Prepare</summary>
 
-Configure industry-standard compliance tools (STIG Viewer) that government and enterprise teams actually use.
+> Configure industry-standard compliance tools (STIG Viewer) that government and enterprise teams actually use.
 
 </details>
 
@@ -41,7 +41,7 @@ Configure industry-standard compliance tools (STIG Viewer) that government and e
 
 <summary>🔐 Harden</summary>
 
-Implement security controls on a live MariaDB database, following the complete remediation cycle: analyze gaps, fix vulnerabilities, document evidence, verify compliance.
+> Implement security controls on a live MariaDB database, following the complete remediation cycle: analyze gaps, fix vulnerabilities, document evidence, verify compliance.
 
 </details>
 
@@ -57,9 +57,9 @@ These aren't simulations—I'm using STIG Viewer 2.18 (the official DoD tool), a
 
 {% stepper %}
 {% step %}
-**🔍 System Security Baseline Assessment**
+#### **🔍 System Security Baseline Assessment**
 
-Discover your system's current security posture.
+**Discover your system's current security posture.**
 
 Analyze critical security configurations by examining:
 
@@ -82,9 +82,9 @@ lsmod | grep -i tables
 {% endstep %}
 
 {% step %}
-**🛠️ STIG Compliance Toolkit Setup**
+#### **🛠️ STIG Compliance Toolkit Setup**
 
-Build your security assessment environment.
+**Build your security assessment environment.**
 
 Configure industry-standard security tools:
 
@@ -111,27 +111,27 @@ STIG Viewer is the industry-standard tool for government and high-security enter
 {% endstep %}
 
 {% step %}
-**🔐 MariaDB Security Hardening**
+#### **🔐 MariaDB Security Hardening**
 
-Implement hands-on security controls on live database infrastructure.
+**Implement hands-on security controls on live database infrastructure.**
 
 Real-world security engineering workflow:
 
 {% stepper %}
 {% step %}
-#### Deploy MariaDB
+**Deploy MariaDB**
 
 Deploy MariaDB with secure installation procedures.
 {% endstep %}
 
 {% step %}
-#### Analyze Security Gaps
+**Analyze Security Gaps**
 
 Analyze security gaps using STIG benchmark requirements.
 {% endstep %}
 
 {% step %}
-#### Remediate Critical Findings
+**Remediate Critical Findings**
 
 Remediate critical findings such as:
 
@@ -142,7 +142,7 @@ Remediate critical findings such as:
 {% endstep %}
 
 {% step %}
-#### Validate Implementation
+**Validate Implementation**
 
 Validate implementation using SQL queries and system verification.
 {% endstep %}
