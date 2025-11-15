@@ -54,64 +54,29 @@ By the end of Session 2, you will have foundational knowledge and skills in:
 ## 🎯 Relevance & Context
 
 {% columns %}
-{% column width="60%" %}
+{% column width="58.333333333333336%" %}
 **Your Professional Responsibility**
 
-Networks represent **one of the most common attack vectors** in enterprise systems. Misconfigured name resolution, open ports, and insecure protocols are all doorways to intrusion. As system engineers building resilient systems, you need **deep understanding** of how data flows through network pathways and what tools can monitor and secure them.
+Networks are one of the **most common attack vectors** in enterprise systems. Misconfigured name resolution, open ports, and insecure protocols are doorways to intrusion. This session teaches you to reduce ingress risk and respond effectively to threats.
 
-**The Fundamental Security Principle**:
 
-Attackers either go **around** controls or **through** controls:
-
-* **Going through controls**: Defeating technical capabilities (difficult)
-* **Going around controls**: Bypassing them entirely (much easier)
 
 {% hint style="danger" %}
-**Real-World Example** Instead of brute-forcing SSH authentication (going through), attackers steal credentials or exploit MFA fatigue attacks where users approve requests just to stop notification spam (going around).
-
-> **Your job**: _Eliminate paths around your technical controls._
+**Real Example**: Instead of brute-forcing SSH, attackers steal credentials or exploit MFA fatigue (going around). Your job is to eliminate paths around your technical controls.
 {% endhint %}
+
+
 
 **Control Types Matter**:
 
 Understanding control categories is **critical** to defensive security:
 
-| Control Type    | Description                            | Example                  |
-| --------------- | -------------------------------------- | ------------------------ |
-| **Technical**   | Applied to systems, cannot be bypassed | SSH disallows root login |
-| **Physical**    | Real-world barriers                    | Locked server room       |
-| **Managerial**  | Requires authority to enforce          | Security policies        |
-| **Operational** | Procedures and practices               | SOPs, change management  |
+<table><thead><tr><th width="115.978515625">Control Type</th><th width="111.123046875">Description</th><th>Example</th></tr></thead><tbody><tr><td><strong>Technical</strong></td><td>Applied to systems, cannot be bypassed</td><td>SSH disallows root login</td></tr><tr><td><strong>Physical</strong></td><td>Real-world barriers</td><td>Locked server room</td></tr><tr><td><strong>Managerial</strong></td><td>Requires authority to enforce</td><td>Security policies</td></tr><tr><td><strong>Operational</strong></td><td>Procedures and practices</td><td>SOPs, change management</td></tr></tbody></table>
 
 **Key Insight**: Technical and physical controls **prevent** actions. Managerial and operational controls require **authority** and \*\*will—if someone doesn't respect that authority, they can ignore the control entirely.
-
-**Enterprise Defense Strategy**
-
-**These capabilities enable you to**:
-
-* **Reduce attack surface** systematically through STIG compliance and network hardening
-* **Detect intrusions early** with comprehensive network monitoring and analysis
-* **Respond effectively** to security incidents using structured analytical frameworks
-* **Maintain compliance** with automated scanning and remediation workflows
-* **Balance security with functionality** through professional judgment and trade-off analysis
-* **Document security posture** professionally for audit, GRC teams, and incident response
-
-**Real-World Application**
-
-By learning to assess and remediate network-related STIGs and implementing structured standards, you'll gain skills to:
-
-* **Reduce ingress risk** through proper network configuration and hardening
-* **Monitor network behavior** for anomalous activity indicating compromise
-* **Respond to threats** using analytical frameworks like the Diamond Model
-* **Meet compliance requirements** with automated tooling and professional documentation
-* **Collaborate with security operations** through clear technical communication
-
-**Not Just Compliance**:
-
-While adhering to standards is important, **understanding what controls do** is more important. Sometimes you must break the rules because blanket application doesn't make sense for your environment. Security engineers need **professional judgment** to implement appropriate controls while maintaining system functionality.
 {% endcolumn %}
 
-{% column %}
+{% column width="43.333333333333336%" %}
 {% hint style="success" %}
 **Network Security Skills**
 
@@ -119,6 +84,12 @@ I'm learning that network security isn't just about firewalls and access control
 
 **Key Realization**: My network configurations **directly determine** organizational risk exposure. Misconfigured services create attack vectors that skilled adversaries will discover and exploit.
 {% endhint %}
+
+
+
+
+
+
 
 {% hint style="info" %}
 **Key Resources**
@@ -129,32 +100,6 @@ I'm learning that network security isn't just about firewalls and access control
 * **SCAP Security Guide**: Comprehensive security content automation
 
 **Professional Development**: These skills are **required** for network security engineering, SOC analyst, incident response, and systems engineering roles in high-security environments including DoD, defense contractors, and Fortune 500 enterprises.
-{% endhint %}
-
-{% hint style="warning" %}
-**Consistency Over Intensity**
-
-Like physical fitness, **you can't go to the gym once a week and get in shape**. Linux security engineering requires **consistent daily practice**:
-
-* Spend a little time every day rather than cramming
-* Build hands-on experience incrementally
-* Practice remediation workflows regularly
-* Review and document what you learn
-
-> **Career Impact**: _Consistent daily practice builds muscle memory and professional judgment that interviews and certifications can't replace._
-{% endhint %}
-
-{% hint style="info" %}
-**Key Terms and Definitions**
-
-* **sysctl**: Kernel parameter configuration utility
-* **nsswitch.conf**: Name service switch configuration file
-* **DNS**: Domain Name System for name resolution
-* **OpenSCAP**: Open Security Content Automation Protocol
-* **CIS Benchmarks**: Center for Internet Security configuration standards
-* **ss/netstat**: Socket statistics and network connection tools
-* **tcpdump**: Packet capture and analysis utility
-* **ngrep**: Network grep for packet content searching
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}

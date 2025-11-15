@@ -94,16 +94,6 @@ As administrators of sensitive data and critical systems, we carry both **ethica
 * **Regulatory Standards**: HIPAA, PCI/DSS, and industry-specific compliance requirements
 * **Implementation methodologies** and documentation standards
 
-#### Enterprise Impact
-
-**These concepts enable you to**:
-
-* **Structure resilient security postures** using defense-in-depth principles
-* **Reduce system attack surfaces** systematically through STIG compliance and benchmarking
-* **Implement comprehensive monitoring** with proper logging and incident documentation
-* **Make risk-informed decisions** using ALE (Annual Loss Expectancy), SLE (Single Loss Expectancy), and ARO (Annual Rate of Occurrence)
-* **Collaborate effectively** with security operations teams through clear documentation
-
 #### Critical Thinking in Security
 
 Security engineering requires **evaluating and defending technical decisions**. You'll practice:
