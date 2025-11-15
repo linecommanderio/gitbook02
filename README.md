@@ -64,7 +64,7 @@ By the end of this jurney, we will be able to:
 ## 📚 Major Instructional Areas
 
 {% tabs %}
-{% tab title="Core Topics" %}
+{% tab title="📘 Core Topics" %}
 * **Build Standards and Compliance** — STIG remediation, CIS Controls, NIST Framework
 * **Securing the Network Connection** — Firewall configuration, network hardening, traffic filtering
 * **User Access and System Integration** — Enterprise IAM integration, authentication mechanisms
@@ -72,7 +72,7 @@ By the end of this jurney, we will be able to:
 * **Updating Systems and Patch Cycles** — Vulnerability management, security update workflows
 {% endtab %}
 
-{% tab title="Advanced Topics" %}
+{% tab title="🧠 Advanced Topics" %}
 * **Monitoring and Parsing Logs** — Centralized logging, event aggregation, log analysis
 * **Monitoring and Alerting** — Real-time threat detection, automated response systems
 * **Configuration Drift and Remediation** — Infrastructure as code, compliance automation
@@ -84,7 +84,7 @@ By the end of this jurney, we will be able to:
 
 ## 🗓️ 10 Sessions
 
-<table data-view="cards"><thead><tr><th>Session</th><th>Topic</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="README (2).md">Session 1</a></td><td><strong>Build Standards and Compliance</strong></td><td><a href="README (2).md">README (2).md</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td>Session 2</td><td>Securing the Network Connection</td><td></td><td></td></tr><tr><td>Session 3</td><td>User Access and System Integration</td><td></td><td></td></tr><tr><td>Session 4</td><td>Bastion Hosts and Air-Gaps</td><td></td><td></td></tr><tr><td>Session 5</td><td>Updating Systems and Patch Cycles</td><td></td><td></td></tr><tr><td>Session 6</td><td>Monitoring and Parsing Logs</td><td></td><td></td></tr><tr><td>Session 7</td><td>Monitoring and Alerting</td><td></td><td></td></tr><tr><td>Session 8</td><td>Configuration Drift and Remediation</td><td></td><td></td></tr><tr><td>Session 9</td><td>Certificate and Key Madness</td><td></td><td></td></tr><tr><td>Session 10</td><td>Recap and Final Project</td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Session</th><th>Topic</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="README (2).md">Session 1</a></td><td>🛡️ <strong>Build Standards and Compliance</strong></td><td><a href="README (2).md">README (2).md</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td>Session 2</td><td>🔐 Securing the Network Connection</td><td></td><td></td></tr><tr><td>Session 3</td><td>User Access and System Integration</td><td></td><td></td></tr><tr><td>Session 4</td><td>Bastion Hosts and Air-Gaps</td><td></td><td></td></tr><tr><td>Session 5</td><td>Updating Systems and Patch Cycles</td><td></td><td></td></tr><tr><td>Session 6</td><td>Monitoring and Parsing Logs</td><td></td><td></td></tr><tr><td>Session 7</td><td>Monitoring and Alerting</td><td></td><td></td></tr><tr><td>Session 8</td><td>Configuration Drift and Remediation</td><td></td><td></td></tr><tr><td>Session 9</td><td>Certificate and Key Madness</td><td></td><td></td></tr><tr><td>Session 10</td><td>🎓 Recap and Final Project</td><td></td><td></td></tr></tbody></table>
 
 {% hint style="success" %}
 **Progressive Learning Path**
