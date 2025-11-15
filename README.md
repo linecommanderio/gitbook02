@@ -22,12 +22,20 @@ layout:
 
 # 🎓 PSC Learning Journey
 
-This learning experience is about discovering how to secure Linux in a corporate environment. I'm focusing on adhering to regulations, best practices, and industry standards. Throughout this experience, I'll explore the concepts of controls, their implementation, and how they fit into overall security posture. I'll practice securely building, deploying, integrating, and monitoring Linux systems. Standard security documentation and reporting will be practiced throughout, better preparing me for the tech industry.
+This learning experience is about discovering how to secure Linux in a corporate environment. I'm focusing on adhering to regulations, best practices, and industry standards.
+
+Throughout this experience, I'll explore the concepts of controls, their implementation, and how they fit into overall security posture.
+
+I'll practice securely building, deploying, integrating, and monitoring Linux systems. Standard security documentation and reporting will be practiced throughout, better preparing me for the tech industry.
 
 {% hint style="warning" %}
 **What Makes This Different**
 
-This isn't just theory—I'm working with the same compliance frameworks, security tools, and hardening procedures used in government and enterprise environments. Every session builds hands-on skills that translate directly to professional security engineering roles.
+This isn't just theory—I'm working with the same compliance frameworks, security tools, and hardening procedures used in government and enterprise environments.&#x20;
+
+
+
+Every session builds hands-on skills that translate directly to professional security engineering roles.
 {% endhint %}
 
 ***
