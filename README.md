@@ -51,7 +51,7 @@ Getting straight to the hands-on, by applying these security controls to product
 
 ## 📚 Learning Objectives
 
-By the end of Session 1, I will have explored:
+By the end of Session 1, we will have explored:
 
 {% tabs %}
 {% tab title="Core Competencies" %}
