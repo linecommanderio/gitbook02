@@ -62,7 +62,10 @@ Networks are one of the **most common attack vectors** in enterprise systems. Mi
 
 
 {% hint style="danger" %}
-**Real Example**: Instead of brute-forcing SSH, attackers steal credentials or exploit MFA fatigue (going around). Your job is to eliminate paths around your technical controls.
+**Real Example**: Instead of brute-forcing SSH, attackers steal credentials or exploit MFA fatigue (going around). \
+
+
+\> Your job is to eliminate paths around your technical controls.
 {% endhint %}
 
 
