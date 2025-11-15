@@ -1,21 +1,4 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
-# Session 1: Build Standards and Compliance
+# session01 gb
 
 ## Overview
 
@@ -95,13 +78,11 @@ STIG Viewer is the **industry-standard tool** for government and high-security e
 
 **Implement hands-on security controls on live database infrastructure**
 
-Real-world security engineering workflow implemented as a sequence:
-
 {% stepper %}
 {% step %}
-### Deploy MariaDB
+**Deploy MariaDB**
 
-Secure installation procedures and service deployment.
+Install and start the service using your system package manager and verify it's listening.
 
 {% code overflow="wrap" %}
 ```bash
@@ -114,9 +95,9 @@ ss -ntulp | grep 3306
 {% endstep %}
 
 {% step %}
-### Analyze Security Gaps
+**Analyze Security Gaps**
 
-Compare the deployment against STIG benchmark requirements to identify gaps.
+Use STIG benchmark requirements to identify deviations and inspect database-level settings.
 
 {% code overflow="wrap" %}
 ```sql
@@ -127,20 +108,22 @@ SELECT user, max_user_connections FROM mysql.user;
 {% endstep %}
 
 {% step %}
-### Remediate Critical Findings
+**Remediate Critical Findings**
 
-Address and remediate benchmark findings, examples include:
+Address identified issues such as:
 
-* v-253666: User connection limit controls
-* v-253677: Authentication security policies
-* v-253678: Access control mechanisms
-* v-253734: Database security configurations
+* `v-253666`: User connection limit controls
+* `v-253677`: Authentication security policies
+* `v-253678`: Access control mechanisms
+* `v-253734`: Database security configurations
+
+(Apply configuration and access control changes according to your STIG remediation plan and organizational policies.)
 {% endstep %}
 
 {% step %}
-### Validate Implementation
+**Validate Implementation**
 
-Verify remediations with SQL queries and system checks.
+Confirm remediations and security controls are active using system and SQL verification.
 
 {% code overflow="wrap" %}
 ```bash
@@ -197,20 +180,30 @@ As administrators of sensitive data and critical systems, we carry both **ethica
 
 **Success requires thorough understanding of**:
 
-* The cybersecurity threat landscape
-* Available security tools and frameworks
-* Implementation methodologies
-* Documentation and reporting requirements
+* **The CIA Triad**: Confidentiality, Integrity, and Availability as foundational security principles
+* **Security Control Types**: Administrative, technical, and physical controls working in concert
+* **Risk Management Frameworks**: NIST RMF and quantitative/qualitative risk assessment methodologies
+* **Regulatory Standards**: HIPAA, PCI/DSS, and industry-specific compliance requirements
+* **Implementation methodologies** and documentation standards
 
 #### Enterprise Impact
 
 **These concepts enable you to**:
 
-* Structure resilient security postures
-* Reduce system attack surfaces systematically
-* Implement comprehensive logging and monitoring
-* Prepare proper incident documentation
-* Collaborate effectively with security operations teams
+* **Structure resilient security postures** using defense-in-depth principles
+* **Reduce system attack surfaces** systematically through STIG compliance and benchmarking
+* **Implement comprehensive monitoring** with proper logging and incident documentation
+* **Make risk-informed decisions** using ALE (Annual Loss Expectancy), SLE (Single Loss Expectancy), and ARO (Annual Rate of Occurrence)
+* **Collaborate effectively** with security operations teams through clear documentation
+
+#### Critical Thinking in Security
+
+Security engineering requires **evaluating and defending technical decisions**. You'll practice:
+
+* Analyzing STIG requirements to understand their protective intent
+* Identifying control categories (preventive, detective, corrective, compensating)
+* Defending implementation choices with risk-based justifications
+* Understanding the relationship between authority, will, and force in security enforcement
 {% endcolumn %}
 
 {% column %}
@@ -220,6 +213,17 @@ As administrators of sensitive data and critical systems, we carry both **ethica
 Even in engineering roles outside dedicated security teams, your work fundamentally affects organizational security. You'll build systems that operate 24/7—requiring robust monitoring and handoff protocols to security and network operations teams.
 
 **Documentation matters**: GRC teams depend on your security implementation reports to maintain compliance and manage organizational risk.
+{% endhint %}
+
+{% hint style="info" %}
+**Key Resources**
+
+* **NIST Risk Management Framework**: [csrc.nist.gov/projects/risk-management](https://csrc.nist.gov/projects/risk-management/about-rmf)
+* **SANS Security Policies**: Industry-standard templates and best practices
+* **OpenSCAP**: Automated compliance scanning and validation
+* **Cyber.mil**: Official DISA STIG repository
+
+**Professional Development**: Understanding these frameworks positions you for roles requiring security clearances and government compliance expertise.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -234,7 +238,7 @@ Even in engineering roles outside dedicated security teams, your work fundamenta
 Students must possess Linux Administration competencies including:
 
 * **Command Line Proficiency**: BASH shell operations and scripting
-* **Package Management**: Installing and updating system packages via `dnf`/`yum`
+* **Package Management**: Installing and updating system packages via DNF/YUM
 * **System Tools**: `systemctl`, `mount`, `grep`, `ss`, and related utilities
 * **Database Operations**: Basic SQL queries using MariaDB
 * **Required Software**: STIG Viewer v2.18 (latest version)
