@@ -22,49 +22,63 @@ layout:
 
 # 🛠️ Session 3 Labs
 
-I'm building three progressively complex labs that take me from PAM authentication analysis through LDAP directory deployment to enterprise identity integration. This isn't theoretical—I'm working with actual PAM configurations, OpenLDAP directory services, and SSSD integration used in corporate environments.
+This hands-on lab sequence makes us analyze PAM security controls, deploy an OpenLDAP directory service, and integrate our system using SSSD.
 
-The progression mirrors real-world Identity and Access Management (IAM) engineering:
+
+
+<details>
+
+<summary>🏗️ What We'll Build</summary>
+
+**Complete Identity and Access Management Stack**:
+
+* [ ] Security-hardened PAM authentication configuration meeting DISA STIGs
+* [ ] Production-grade OpenLDAP directory service with TLS encryption
+* [ ] SSSD integration enabling centralized authentication
+* [ ] Automated home directory provisioning for directory users
+
+
+
+</details>
+
+### Lab Progression
+
+You'll work through five progressive challenges, each building on the previous:
 
 {% stepper %}
 {% step %}
-<details>
-
-<summary>🔍 Authentication Analysis</summary>
-
-Explore PAM (Pluggable Authentication Modules) configuration and examine authentication-related STIGs for SSH, password complexity, and system security services daemon (SSSD) integration.
-
-</details>
+#### 🔍 **PAM Reconnaissance**  → Understand actual authentication architecture
 {% endstep %}
 
 {% step %}
-<details>
-
-<summary>🏗️ Directory Infrastructure</summary>
-
-Build a complete OpenLDAP server from scratch—configure schemas, set up organizational units, create users, and secure communications with TLS certificates. This is the centralized identity backbone enterprises use (or Active Directory in Windows environments).
-
-</details>
+#### 📋 **STIG Assessment** → Analyze authentication security controls
 {% endstep %}
 
 {% step %}
-<details>
+#### 🛡️ **PAM Hardening** → Implement security remediation systematically
+{% endstep %}
 
-<summary>🔗 Enterprise Integration</summary>
+{% step %}
+#### 🏗️ **LDAP Deployment** → Build centralized directory infrastructure
+{% endstep %}
 
-Configure SSSD to connect my Linux system to the LDAP directory for centralized authentication. Validate that LDAP users can authenticate and access system resources—the same workflow used for domain-joined enterprise systems.
-
-</details>
+{% step %}
+#### 🔗 **SSSD Integration** → Connect systems to enterprise authentication
 {% endstep %}
 {% endstepper %}
 
 {% hint style="info" %}
-**What Makes This Real**
+**Real-World Workflow**
 
-These aren't simulations—I'm using actual RHEL 9 PAM configurations, OpenLDAP with production-grade TLS security, and SSSD integration that mirrors Active Directory domain joins. The LDIF (LDAP Data Interchange Format) files, authentication workflows, and validation procedures are exactly what's used in enterprise IAM implementations.
+In corporate environments, we won't build LDAP servers—IAM teams run Active Directory or managed directory services.
+
+But you'll absolutely configure SSSD to integrate your Linux systems with their infrastructure. This lab teaches you both sides so you understand the complete authentication flow.
 {% endhint %}
 
-By the end, I'll understand both the **authentication security controls** (PAM and password complexity) and the **centralized identity infrastructure** (LDAP directory services with SSSD integration). More importantly, I'll know how Linux systems authenticate users in enterprise environments—critical knowledge for any systems engineer.
+By the end, we'll understand:&#x20;
+
+* The **authentication security controls** (PAM and password complexity) and the **centralized identity infrastructure** (LDAP directory services with SSSD integration).&#x20;
+* And have a complete identity management solution that demonstrates both security compliance and enterprise integration capabilities.
 
 ***
 
