@@ -10,7 +10,6 @@
   * [session\_lab\_1\_balanced](prolug-security-course/session-1-build-standards-and-compliance/session_lab_1_balanced.md)
 * [🔐 Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection/README.md)
   * [🛠️ Session 2 Labs](prolug-security-course/session-2-securing-the-network-connection/session-2-labs.md)
-  * [session2labs\_gitbook](prolug-security-course/session-2-securing-the-network-connection/session2labs_gitbook.md)
 * [🪪 Session 3: User Access and System Integration](prolug-security-course/session-3-user-access-and-system-integration/README.md)
   * [🛠️ Session 3 Labs](prolug-security-course/session-3-user-access-and-system-integration/session-3-labs.md)
 * [📵 Session 4: Bastion Hosts and Air-Gaps](prolug-security-course/session-4-bastion-hosts-and-air-gaps/README.md)
