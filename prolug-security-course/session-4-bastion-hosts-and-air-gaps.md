@@ -1,6 +1,11 @@
 ---
+cover: ../.gitbook/assets/session6-ezgif.webp
+coverY: -103.6328053938512
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,16 +20,18 @@ layout:
     visible: true
 ---
 
-# session4\_gitbook
+# 📵 Session 4: Bastion Hosts and Air-Gaps
 
-We will focus on **controlling system connectivity** through air-gapped architectures and bastion host implementations. This session explores how to limit exposure, create strong security boundaries, and establish controlled access points into isolated environments.
+We will focus on **controlling system connectivity** through air-gapped architectures and bastion host implementations.&#x20;
+
+This session explores how to limit exposure, create strong security boundaries, and establish controlled access points into isolated environments.
 
 Air-gapped systems and bastion hosts are proven strategies for managing risk in enterprise environments. They focus on limiting exposure by creating physical and logical boundaries that support broader security architecture.
 
 {% hint style="info" %}
-**Enterprise Reality**: In production environments, completely isolating systems isn't practical—they need controlled access. Our job is to **design secure boundaries** and **implement controlled entry points** that maintain security while enabling necessary operations.
+**Enterprise Reality**: In production environments, completely isolating systems isn't practical because they need controlled access.&#x20;
 
-> **Key Insight**: _True air gaps are rare. Most "air-gapped" systems have defined, heavily monitored connection points. Bastions are how we enforce those controlled connections._
+> _Our job is to_ **design secure boundaries** _and_ **implement controlled entry points** _that maintain security while enabling necessary operations._
 {% endhint %}
 
 ***
@@ -41,7 +48,7 @@ By the end of Session 4, you will have foundational knowledge and skills in:
 4. **Process Isolation**: Understanding namespaces, cgroups, and containment techniques
 {% endtab %}
 
-{% tab title="💡 Professional Skills" %}
+{% tab title="👔 Professional Skills" %}
 5. **Security Architecture**: Designing network boundaries that balance security and operations
 6. **Access Control**: Automating user restrictions and session management
 7. **Compliance Integration**: Applying DISA STIGs to isolated system architectures
@@ -53,7 +60,9 @@ By the end of Session 4, you will have foundational knowledge and skills in:
 
 ## 🎯 Relevance & Context
 
-Bastions and air gaps are strategies for controlling how systems connect—or don't connect—to the outside world. As organizations grow, protecting critical systems becomes more challenging. These proven architectural patterns offer ways to limit exposure and manage access securely.
+Bastions and air gaps are strategies for controlling how systems do or don't connect to the outside world.&#x20;
+
+As organizations grow, protecting critical systems becomes more challenging. These proven architectural patterns offer ways to limit exposure and manage access securely.
 
 #### What You'll Learn
 
@@ -71,7 +80,7 @@ Bastions and air gaps are strategies for controlling how systems connect—or do
 
 <details>
 
-<summary>💡 <strong>Professional Skills</strong></summary>
+<summary>👔 <strong>Professional Skills</strong></summary>
 
 * [ ] Designing security boundaries without creating operational barriers
 * [ ] Creating network architecture documentation for stakeholders
@@ -82,7 +91,7 @@ Bastions and air gaps are strategies for controlling how systems connect—or do
 </details>
 
 {% columns %}
-{% column %}
+{% column width="58.333333333333336%" %}
 **Why Controlled Isolation Matters**
 
 **The Challenge**:
@@ -99,15 +108,21 @@ Bastions and air gaps are strategies for controlling how systems connect—or do
 * **User jailing** restricts what authenticated users can do
 * **Network boundaries** are clearly defined and monitored
 
-**Real-World Application**: Think of Helm's Deep from _The Lord of the Rings_—there were only two entry points into a heavily fortified position. Defenders could focus resources on those choke points. That's exactly how bastion architecture works: force all traffic through defined, heavily monitored and restricted access points.
+**Real-World Application**: Think of airport security—regardless of how many gates the airport has, _every passenger_ must pass through TSA checkpoints.&#x20;
+
+* Security personnel can focus all their resources and monitoring on these controlled entry points.&#x20;
+
+That's exactly how bastion architecture works: _**force all traffic through defined, heavily monitored checkpoints where security controls are enforced.**_
 {% endcolumn %}
 
-{% column %}
+{% column width="41.666666666666664%" %}
 {% hint style="success" %}
 **What You're Building**:
 
 A complete bastion system that restricts incoming users to pre-defined actions, automatically jails their sessions, and provides controlled access to isolated networks.
 {% endhint %}
+
+
 
 {% hint style="warning" %}
 **Important Context**:
@@ -115,10 +130,16 @@ A complete bastion system that restricts incoming users to pre-defined actions, 
 "Air-gapped" systems in practice are rarely _completely_ isolated. Most have controlled connection points for necessary operations.
 {% endhint %}
 
+
+
+
+
 {% hint style="info" %}
 **Career Reality**:
 
-You'll design network boundaries and implement bastions more than you'll build truly air-gapped systems. Understanding both concepts helps you make informed architectural decisions and communicate risk appropriately.
+You'll design network boundaries and implement bastions more than you'll build truly air-gapped systems.&#x20;
+
+Understanding both concepts helps you make informed architectural decisions and communicate risk appropriately.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
