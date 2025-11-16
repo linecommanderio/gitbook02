@@ -6,6 +6,7 @@
 * [🛡️ Session 1: Build Standards and Compliance](prolug-security-course/session-1-build-standards-and-compliance/README.md)
   * [🛠️ Session 1 Labs](prolug-security-course/session-1-build-standards-and-compliance/session-1-labs.md)
   * [🛠️ session\_lab\_1\_gitbook](prolug-security-course/session-1-build-standards-and-compliance/session_lab_1_gitbook.md)
+  * [session\_lab\_1\_simplified](prolug-security-course/session-1-build-standards-and-compliance/session_lab_1_simplified.md)
 * [🔐 Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection/README.md)
   * [🛠️ Session 2 Labs](prolug-security-course/session-2-securing-the-network-connection/session-2-labs.md)
 * [🪪 Session 3: User Access and System Integration](prolug-security-course/session-3-user-access-and-system-integration/README.md)

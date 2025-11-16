@@ -60,11 +60,11 @@ By the end, we will understand both the manual security engineering workflow (cr
 
 ***
 
-## 🛠️ Labs to Build Here
+### 🛠️ Labs to Build Here
 
 {% stepper %}
 {% step %}
-### 🔥 Pre-Lab Warm-Up: System Security Reconnaissance
+#### 🔥 Pre-Lab Warm-Up: System Security Reconnaissance
 
 Quick system familiarization and security posture assessment.
 
@@ -122,7 +122,7 @@ These baseline checks reveal your system's current security configuration before
 {% endstep %}
 
 {% step %}
-### 🔧 STIG Viewer Setup and RHEL 9 STIG Import
+#### 🔧 STIG Viewer Setup and RHEL 9 STIG Import
 
 Configure your security assessment toolkit.
 
@@ -156,7 +156,7 @@ Tool Context: STIG Viewer is the industry-standard tool for DoD and high-securit
 {% endstep %}
 
 {% step %}
-### 🌐 Network Service STIG Remediation
+#### 🌐 Network Service STIG Remediation
 
 Hands-on network configuration hardening.
 
@@ -169,7 +169,7 @@ Connect to your lab server and begin systematic STIG assessment:
 ```
 {% endcode %}
 
-#### Examine and Remediate V-257957: TCP SYN Cookies
+**Examine and Remediate V-257957: TCP SYN Cookies**
 
 {% tabs %}
 {% tab title="🔍 Analysis" %}
@@ -218,7 +218,7 @@ sysctl net.ipv4.tcp_syncookies
 {% endtab %}
 {% endtabs %}
 
-#### Examine and Remediate V-257958
+**Examine and Remediate V-257958**
 
 {% hint style="warning" %}
 Assignment — Follow the same analysis pattern:
@@ -246,7 +246,7 @@ How would you remediate this?
 {% endstepper %}
 {% endhint %}
 
-#### Examine V-257960 and V-257961 (Related STIGs)
+**Examine V-257960 and V-257961 (Related STIGs)**
 
 Key Question: How are these two STIGs related? What do they accomplish together?
 
@@ -256,7 +256,7 @@ Key Question: How are these two STIGs related? What do they accomplish together?
 {% endstep %}
 
 {% step %}
-### 🔥 Firewall STIG Analysis
+#### 🔥 Firewall STIG Analysis
 
 Understanding firewall security controls.
 
@@ -293,7 +293,7 @@ These controls work together to create defense-in-depth at the network boundary.
 {% endstep %}
 
 {% step %}
-### 🚪 Firewall Port Exposure Lab
+#### 🚪 Firewall Port Exposure Lab
 
 Real-world scenario: Exposing services securely.
 
@@ -347,7 +347,7 @@ This XML structure allows firewalld to manage services by name rather than memor
 {% endstep %}
 
 {% step %}
-### 🤖 Automated STIG Remediation Tools
+#### 🤖 Automated STIG Remediation Tools
 
 Generate automated remediation scripts.
 
@@ -357,7 +357,7 @@ Critical Understanding: Security engineers don't blindly apply all STIG remediat
 Your value: Knowing which controls to apply and which to adapt based on business requirements.
 {% endhint %}
 
-#### Download Official DISA STIG Remediation Ansible
+**Download Official DISA STIG Remediation Ansible**
 
 {% code title="download-stig-ansible.sh" overflow="wrap" lineNumbers="true" %}
 ```bash
@@ -384,7 +384,7 @@ unzip rhel9STIG-ansible.zip
 Note: If lab downloads don't work, check `/labs` folder on your server for `[course]_[unit#].zip` backup files.
 {% endhint %}
 
-#### Examine Default STIG Values
+**Examine Default STIG Values**
 
 {% code title="examine-defaults.sh" overflow="wrap" %}
 ```bash
@@ -405,7 +405,7 @@ What You'll See:
 * Variables you can customize for your environment
 * Boolean flags to enable/disable specific remediations
 
-#### Examine Ansible Playbook Implementation
+**Examine Ansible Playbook Implementation**
 
 {% code title="examine-playbook.sh" overflow="wrap" %}
 ```bash
@@ -431,7 +431,7 @@ Key Insight: Modify `defaults/main.yml` to customize which STIGs apply and with 
 
 </details>
 
-#### Generate OpenSCAP Remediation Scripts
+**Generate OpenSCAP Remediation Scripts**
 
 {% code title="openscap-remediation.sh" overflow="wrap" lineNumbers="true" %}
 ```bash
