@@ -44,7 +44,7 @@ Every session builds hands-on skills that translate directly to professional sec
 
 ***
 
-## 🎯 Learning Goals
+### 🎯 Learning Goals
 
 By the end of this jurney, we will be able to:
 
@@ -61,7 +61,7 @@ By the end of this jurney, we will be able to:
 
 ***
 
-## 📚 Major Instructional Areas
+### 📚 Major Instructional Areas
 
 {% tabs %}
 {% tab title="📘 Core Topics" %}
@@ -82,9 +82,9 @@ By the end of this jurney, we will be able to:
 
 ***
 
-## 🗓️ 10 Sessions
+### 🗓️ 10 Sessions
 
-<table data-view="cards"><thead><tr><th>Session</th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="README (2).md"><em>Session 1</em></a></td><td>🛡️ <strong>Build Standards and Compliance</strong></td><td><a href="README (2).md">README (2).md</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-2-securing-the-network-connection/"><em>Session 2</em></a></td><td><strong>🔐 Securing the Network Connection</strong></td><td><a href="prolug-security-course/session-2-securing-the-network-connection/">session-2-securing-the-network-connection</a></td><td><a href=".gitbook/assets/session2-ezgif.webp">session2-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-3-user-access-and-system-integration/"><em>Session 3</em></a></td><td>🪪 <strong>User Access and System Integration</strong></td><td><a href="prolug-security-course/session-3-user-access-and-system-integration/">session-3-user-access-and-system-integration</a></td><td><a href=".gitbook/assets/session3-ezgif.webp">session3-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/"><em>Session 4</em></a></td><td>📵 <strong>Bastion Hosts and Air-Gaps</strong></td><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/">session-4-bastion-hosts-and-air-gaps</a></td><td><a href=".gitbook/assets/session6-ezgif.webp">session6-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-5-updating-systems-and-patch-cycles/"><em>Session 5</em></a></td><td>🔄 <strong>Updating Systems and Patch Cycles</strong></td><td></td><td><a href=".gitbook/assets/session5-ezgif.webp">session5-ezgif.webp</a></td></tr><tr><td><em>Session 6</em></td><td>🔎 <strong>Monitoring and Parsing Logs</strong></td><td></td><td></td></tr><tr><td><em>Session 7</em></td><td>🚨 <strong>Monitoring and Alerting</strong></td><td></td><td></td></tr><tr><td><em>Session 8</em></td><td>⚠️ <strong>Configuration Drift and Remediation</strong></td><td></td><td></td></tr><tr><td><em>Session 9</em></td><td>🔏 <strong>Certificate and Key Madness</strong></td><td></td><td></td></tr><tr><td><em>Session 10</em></td><td><strong>🎓 Recap and Final Project</strong></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Session</th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="README (2).md"><em>Session 1</em></a></td><td>🛡️ <strong>Build Standards and Compliance</strong></td><td><sub><em>Foundation in security frameworks, STIG remediation, and compliance reporting</em></sub></td><td><a href="README (2).md">README (2).md</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-2-securing-the-network-connection/"><em>Session 2</em></a></td><td><strong>🔐 Securing the Network Connection</strong></td><td><sub><em>Network security architecture, firewall configuration, and traffic control</em></sub></td><td><a href="prolug-security-course/session-2-securing-the-network-connection/">session-2-securing-the-network-connection</a></td><td><a href=".gitbook/assets/session2-ezgif.webp">session2-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-3-user-access-and-system-integration/"><em>Session 3</em></a></td><td>🪪 <strong>User Access and System Integration</strong></td><td><sub><em>Identity and access management, LDAP integration, and trust authorities</em></sub></td><td><a href="prolug-security-course/session-3-user-access-and-system-integration/">session-3-user-access-and-system-integration</a></td><td><a href=".gitbook/assets/session3-ezgif.webp">session3-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/"><em>Session 4</em></a></td><td>📵 <strong>Bastion Hosts and Air-Gaps</strong></td><td><sub><em>Controlled access architectures and network isolation strategies</em></sub></td><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/">session-4-bastion-hosts-and-air-gaps</a></td><td><a href=".gitbook/assets/session6-ezgif.webp">session6-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-5-updating-systems-and-patch-cycles/"><em>Session 5</em></a></td><td>🔄 <strong>Updating Systems and Patch Cycles</strong></td><td><sub><em>Lifecycle management, vulnerability reduction, and change control</em></sub></td><td></td><td><a href=".gitbook/assets/session5-ezgif.webp">session5-ezgif.webp</a></td></tr><tr><td><em>Session 6</em></td><td>🔎 <strong>Monitoring and Parsing Logs</strong></td><td><sub><em>Log analysis, SIEM integration, and security event detection</em></sub></td><td></td><td></td></tr><tr><td><em>Session 7</em></td><td>🚨 <strong>Monitoring and Alerting</strong></td><td><sub><em>Real-time alerting with Kafka, Loki, Grafana stack</em></sub></td><td></td><td></td></tr><tr><td><em>Session 8</em></td><td>⚠️ <strong>Configuration Drift and Remediation</strong></td><td><sub><em>Baseline management, configuration monitoring, and remediation automation</em></sub></td><td></td><td></td></tr><tr><td><em>Session 9</em></td><td>🔏 <strong>Certificate and Key Madness</strong></td><td><sub><em>PKI, certificate lifecycle, and cryptographic fundamentals</em></sub></td><td></td><td></td></tr><tr><td><em>Session 10</em></td><td><strong>🎓 Recap and Final Project</strong></td><td></td><td></td><td></td></tr></tbody></table>
 
 {% hint style="success" %}
 **Progressive Learning Path**
@@ -118,7 +118,7 @@ These methods focus on building skills that can be effectively applied in profes
 
 </details>
 
-### 🔗 Key Resources
+#### 🔗 Key Resources
 
 {% columns %}
 {% column width="50%" %}
@@ -139,4 +139,17 @@ These methods focus on building skills that can be effectively applied in profes
 **Collaborative Learning Environment**
 
 As you work on course deliverables, you're encouraged to share ideas with peers and instructors, work collaboratively on projects and team assignments, raise questions, and provide constructive feedback. This mirrors real-world security engineering team dynamics.
+{% endhint %}
+
+#### :loudspeaker: Discussion Participation
+
+**Weekly Discussion Posts** (Required for Certificate):
+
+1. **Initial Response**: Answer the weekly discussion question based on your learning
+2. **Peer Engagement**: Respond meaningfully to at least one classmate's post
+
+{% hint style="info" %}
+**Discussion Value**:
+
+You'll discover that others think differently than you do. You'll gain insights you can't get from documentation alone. This collaborative learning is essential in security engineering—you'll work with diverse teams throughout your career.
 {% endhint %}
