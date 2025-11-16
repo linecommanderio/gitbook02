@@ -11,7 +11,7 @@
   * [🛠️ Session 3 Labs](prolug-security-course/session-3-user-access-and-system-integration/session-3-labs.md)
 * [📵 Session 4: Bastion Hosts and Air-Gaps](prolug-security-course/session-4-bastion-hosts-and-air-gaps/README.md)
   * [🛠️ Session 4 Labs](prolug-security-course/session-4-bastion-hosts-and-air-gaps/session-4-labs.md)
-* [Session 5: Updating systems and patch cycles](<README (1).md>)
+* [🔄 Session 5: Updating systems and patch cycles](prolug-security-course/session-5-updating-systems-and-patch-cycles/README.md)
   * [Security Unit 5 Discussion Post 1](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-1.md)
   * [Security Unit 5 Discussion Post 2](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-2.md)
 * [Session 6: Monitoring and parsing logs](prolug-security-course/session-6-monitoring-and-parsing-logs/README.md)
