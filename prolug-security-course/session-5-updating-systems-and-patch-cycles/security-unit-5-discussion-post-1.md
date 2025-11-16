@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/Screenshot from 2025-11-16 11-59-53.png
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
