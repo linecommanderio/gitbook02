@@ -18,3 +18,7 @@
 * [Session 6: Monitoring and parsing logs](prolug-security-course/session-6-monitoring-and-parsing-logs/README.md)
   * [Security Unit 6 Discussion Post 1](prolug-security-course/session-6-monitoring-and-parsing-logs/security-unit-6-discussion-post-1.md)
   * [Security Unit 6 Discussion Post 2](prolug-security-course/session-6-monitoring-and-parsing-logs/security-unit-6-discussion-post-2.md)
+* [session\_2\_overview\_gitbook](prolug-security-course/session_2_overview_gitbook.md)
+* [session\_1\_gitbook](prolug-security-course/session_1_gitbook.md)
+* [session\_7\_monitoring\_alerting\_gitbook](prolug-security-course/session_7_monitoring_alerting_gitbook.md)
+* [session\_6\_logs\_and\_parsing](prolug-security-course/session_6_logs_and_parsing.md)
