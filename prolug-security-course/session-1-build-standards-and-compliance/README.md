@@ -64,7 +64,7 @@ As the shepherds of sensitive data and systems, it is the **ethical and legal du
 
 To be successful in securing systems, you need to thoroughly understand the cybersecurity landscape, its myriad potential threats, and the tools engineers and administrators have at their disposal.
 
-### What You'll Learn
+#### What You'll Learn
 
 <details>
 
