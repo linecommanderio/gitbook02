@@ -148,7 +148,7 @@ Every job posting for Linux Sysadmins or Engineers mention concepts like Identit
 
 ***
 
-## ✅ Prerequisites
+### ✅ Prerequisites
 
 {% hint style="warning" %}
 **📋 Required Foundation**
