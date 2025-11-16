@@ -22,7 +22,7 @@ layout:
 
 # 🛠️ Session 4 Labs
 
-I'm building two progressively complex labs that take me from basic user jailing through complete bastion host implementation.
+I'm building three progressively complex labs that take me from basic user jailing through complete bastion host implementation.
 
 <details>
 
@@ -56,9 +56,11 @@ A **controlled access infrastructure** for air-gapped systems:
 **What Makes This Real**
 
 These aren't simulations—we're building actual chroot jails with real filesystem isolation, implementing bastion hosts with automatic user jailing on SSH connection, and testing security controls that protect production air-gapped networks.&#x20;
+{% endhint %}
 
 The techniques taught here are used to secure classified systems, financial infrastructure, and critical operational technology.
-{% endhint %}
+
+
 
 By the end, we'll understand:&#x20;
 
@@ -691,13 +693,11 @@ Once you're comfortable with the Git workflow, consider contributing:
 
 > _You've built chroot jails used in containerization, bastion hosts protecting classified networks, and practiced Git workflows used in enterprise infrastructure-as-code development._
 
-
-
 **Career Impact**: Add these skills to your project section on your resume:
 
-* "Implemented chroot jail environments for process isolation"
-* "Deployed bastion host architecture for air-gapped network access control"
-* "Contributed to open-source security lab infrastructure via GitHub"
+* **"Implemented chroot jail environments for process isolation"**
+* **"Deployed bastion host architecture for air-gapped network access control"**
+* **"Contributed to open-source security lab infrastructure via GitHub"**
 {% endhint %}
 
 ***

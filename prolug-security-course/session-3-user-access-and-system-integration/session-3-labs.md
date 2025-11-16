@@ -754,9 +754,13 @@ This is the same architecture used for Active Directory domain joins—SSSD just
 
 These labs mirror actual enterprise IAM engineering workflows—from authentication security analysis through directory infrastructure deployment to system integration.&#x20;
 
-You'll understand PAM authentication, build OpenLDAP directory services, and configure SSSD integration using the same tools and processes required in corporate environments.
+> _You'll understand PAM authentication, build OpenLDAP directory services, and configure SSSD integration using the same tools and processes required in corporate environments._
 
-**Career Impact**: _Add "Enterprise LDAP deployment," "SSSD/Active Directory integration," and "PAM security hardening" to your resume._
+**Career Impact**: Add these skills to your project section on your resume:
+
+* **"Enterprise LDAP deployment"**
+* **"SSSD/Active Directory integration"**
+* **"PAM security hardening"**
 {% endhint %}
 
 ***

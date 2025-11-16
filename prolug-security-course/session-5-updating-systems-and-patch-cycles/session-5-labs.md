@@ -1,4 +1,26 @@
-# sess5\_lab
+---
+cover: ../../.gitbook/assets/lab-ezgif.png
+coverY: -221.63013987743312
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
+# 🛠️ Session 5 Labs
 
 I'm building a complete enterprise package management and patching infrastructure through progressively complex labs.
 
@@ -39,10 +61,14 @@ A **production-grade software supply chain** with controlled repositories and au
 {% hint style="info" %}
 **Real-World Workflow**
 
-In corporate environments, you'll manage internal repositories more often than you'll build them from scratch—DevOps teams typically maintain centralized repository infrastructure.
+In corporate environments, you'll manage internal repositories more often than you'll build them from scratch.
 
-But you'll **absolutely** configure systems to use internal repos, implement version locking, and execute patching procedures. This lab teaches you the complete pipeline so you understand how repositories serve enterprise patching workflows.
+But you'll **absolutely** configure systems to use internal repos, implement version locking, and execute patching procedures.
 {% endhint %}
+
+This lab teaches you the complete pipeline so you understand how repositories serve enterprise patching workflows.
+
+
 
 By the end, we'll understand:
 
@@ -54,7 +80,7 @@ And have a complete package management solution that demonstrates both supply ch
 
 ***
 
-## 📋 Required Materials
+### 📋 Required Materials
 
 {% tabs %}
 {% tab title="🛠️ Tools" %}
@@ -83,11 +109,11 @@ And have a complete package management solution that demonstrates both supply ch
 
 ***
 
-## 🛠️ Labs to Build Here
+### 🛠️ Labs to Build Here
 
 {% stepper %}
 {% step %}
-**🔥 Pre-Lab: Security Tools and Vendor Software**
+#### **🔥 Pre-Lab: Security Tools and Vendor Software**
 
 Prepare your assessment toolkit and understand vendor software distribution.
 
@@ -171,7 +197,7 @@ The Mellanox ISO is already provided in `/lab_work/repos_and_patching/` for your
 {% endstep %}
 
 {% step %}
-**🔐 Lab Part 1: Apache HTTP Server STIG Assessment**
+#### **🔐 Lab Part 1: Apache HTTP Server STIG Assessment**
 
 Analyze security controls for the repository server before building the repository infrastructure.
 
@@ -441,7 +467,7 @@ ls -ldZ /etc/httpd
 {% endstep %}
 
 {% step %}
-**📦 Lab Part 2: Building Local Package Repositories**
+#### **📦 Lab Part 2: Building Local Package Repositories**
 
 Create a local package repository from the Rocky Linux DVD ISO.
 
@@ -730,7 +756,7 @@ Installing dependencies:
 {% endstep %}
 
 {% step %}
-**🌐 Lab Part 3: Network-Shared Repository Infrastructure**
+#### **🌐 Lab Part 3: Network-Shared Repository Infrastructure**
 
 Share your local repository over HTTP so other systems can access it.
 
@@ -1054,7 +1080,7 @@ dnf --disablerepo="*" --enablerepo="BaseOS AppStream" install gimp
 {% endstep %}
 
 {% step %}
-**🤖 Lab Part 4: Enterprise Patching Automation**
+#### **🤖 Lab Part 4: Enterprise Patching Automation**
 
 Implement systematic patching workflows with Ansible automation and staged deployment procedures.
 
@@ -1262,7 +1288,7 @@ After completing the KillerCoda lab:
 {% endstep %}
 
 {% step %}
-**🎯 Optional Challenge: Digging Deeper**
+#### **🎯 Optional Challenge: Digging Deeper**
 
 Advanced challenges for engineers ready to extend their repository and patching knowledge.
 
@@ -1345,40 +1371,18 @@ Add to resume: "Contributed to open-source Ansible patching framework"
 {% endstep %}
 {% endstepper %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 🎓 **Professional Development**
 
 These labs mirror actual enterprise infrastructure workflows—from security assessment through repository infrastructure deployment to automated patching frameworks.
 
-You've built Apache-based repository servers, configured package distribution infrastructure, and implemented Ansible automation using the same tools and processes required in corporate environments.
+> _You've built Apache-based repository servers, configured package distribution infrastructure, and implemented Ansible automation using the same tools and processes required in corporate environments._
 
-**Career Impact**: _Add "Enterprise Linux repository management," "Apache HTTP configuration," and "Ansible patching automation" to your resume._
-{% endhint %}
+**Career Impact**: Add these skills to your project section on your resume:
 
-{% hint style="danger" %}
-**Lab Cleanup Requirement**
-
-When you finish working in the ProLUG lab environment, **reboot the machine from the command line** so other students have the intended environment:
-
-```bash
-sudo reboot
-```
-
-This ensures the next student starts with a clean, standardized environment.
+* **"Enterprise Linux repository management"**
+* **"Apache HTTP configuration"**
+* **"Ansible patching automation"**
 {% endhint %}
 
 ***
-
-Page cover recommendation: Hero-width cover showing a software supply chain flow—from ISO/vendor source through repository server (with Apache logo) to multiple client systems, with security checkpoints (GPG verification shields) and Ansible automation workflow indicators. Dark gradient background (deep blue to black) with subtle package iconography overlay.
-
-Page icon suggestion: 📦 (package symbol) — Represents package management and software distribution infrastructure
-
-Suggested section icons (use as needed):
-
-* 🔧 Technical Implementation sections
-* 🔐 Security Assessment content
-* ✅ Validation/Testing procedures
-* ⚠️ Warning/Critical notes
-* 💡 Key Insights/Analysis
-* 🏢 Enterprise Context
-* 🎯 Challenge/Optional content
