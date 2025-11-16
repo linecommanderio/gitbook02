@@ -75,7 +75,12 @@ These aren't simulations—I'm using actual RHEL 9 STIGs, official DoD remediati
 > &#x20;_The analysis methodology (**What's the problem? What's the fix? What control type?**) is exactly how security engineers evaluate compliance requirements in government and enterprise environments._
 {% endhint %}
 
-By the end, we will understand both the manual security engineering workflow (critical for learning) and the automated compliance tooling (critical for scaling). More importantly, we'll learn **when to apply automation and when human judgment is required**.
+By the end, we will understand:
+
+* The manual security engineering workflow (_critical for learning_)&#x20;
+* The automated compliance tooling (_critical for scaling_).&#x20;
+
+More importantly, we'll learn **when to apply automation and when human judgment is required**.
 
 ***
 
