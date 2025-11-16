@@ -1,4 +1,21 @@
-# Security Unit 5 Discussion Post 2
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
+# 📢 Security Unit 5 Discussion Post 2
 
 ## Security Unit 5 Discussion Post 2
 
