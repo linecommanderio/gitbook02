@@ -22,7 +22,7 @@ layout:
 
 # 🛠️ Session 2 Labs
 
-I'm building six progressively complex labs that take me from baseline security assessment through manual STIG remediation to automated compliance tooling. This isn't theoretical—I'm working with actual RHEL 9 STIGs, official DoD tools, and production firewall configurations used in government and enterprise environments.
+I'm building six progressively complex labs that take me from baseline security assessment through manual STIG remediation to automated compliance tooling.
 
 The progression mirrors real-world security engineering:
 
@@ -30,7 +30,7 @@ The progression mirrors real-world security engineering:
 
 <summary>🔍 Reconnaissance &#x26; Setup</summary>
 
-> Baseline the system's current security posture by examining kernel parameters, cryptographic settings, and security mechanisms. Then configure STIG Viewer 2.18 (the official DoD compliance tool) with RHEL 9 STIG benchmarks—the same setup government and defense contractors use.
+> Baseline the system's current security posture by examining kernel parameters, cryptographic settings, and security mechanisms. Then configure STIG Viewer 2.18 (the official DoD compliance tool) with RHEL 9 STIG benchmarks.
 
 </details>
 
@@ -53,7 +53,9 @@ The progression mirrors real-world security engineering:
 {% hint style="info" %}
 **What Makes This Real**
 
-These aren't simulations—I'm using actual RHEL 9 STIGs, official DoD remediation Ansible, STIG Viewer 2.18, and production firewalld configurations. The analysis methodology (_**What's the problem? What's the fix? What control type?**_) is exactly how security engineers evaluate compliance requirements in government and enterprise environments.
+These aren't simulations—I'm using actual RHEL 9 STIGs, official DoD remediation Ansible, STIG Viewer 2.18, and production firewalld configurations.
+
+> &#x20;_The analysis methodology (**What's the problem? What's the fix? What control type?**) is exactly how security engineers evaluate compliance requirements in government and enterprise environments._
 {% endhint %}
 
 By the end, we will understand both the manual security engineering workflow (critical for learning) and the automated compliance tooling (critical for scaling). More importantly, we'll learn **when to apply automation and when human judgment is required**—that's what makes a security engineer valuable.

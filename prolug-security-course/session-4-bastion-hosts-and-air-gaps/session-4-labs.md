@@ -55,16 +55,16 @@ A **controlled access infrastructure** for air-gapped systems:
 {% hint style="info" %}
 **What Makes This Real**
 
-These aren't simulations—we're building actual chroot jails with real filesystem isolation, implementing bastion hosts with automatic user jailing on SSH connection, and testing security controls that protect production air-gapped networks.&#x20;
-{% endhint %}
-
 The techniques taught here are used to secure classified systems, financial infrastructure, and critical operational technology.
+
+> _We're building actual chroot jails with real filesystem isolation, implementing bastion hosts with automatic user jailing on SSH connection, and testing security controls that protect production air-gapped networks._&#x20;
+{% endhint %}
 
 
 
 By the end, we'll understand:&#x20;
 
-* The **technical mechanisms** (chroot, SSH configuration, shell scripting)
+* The **technical mechanisms** (`chroot`, SSH configuration, shell scripting)
 * The **architectural patterns** (bastion hosts, controlled entry points, defense-in-depth).
 
 More importantly, we'll know how to design and implement controlled access to isolated systems.
