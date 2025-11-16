@@ -105,7 +105,7 @@ Each session builds on previous knowledge—from foundational compliance (Sessio
 
 ### 📖 The Course Referenced
 
-This Learning Journey contains all materials pertaining to the [**ProLUG Security Engineering Course**](https://professionallinuxusersgroup.github.io/psc/syllabus.html).
+This Learning Journey contains all materials pertaining to the [**ProLUG Security Engineering Course**](https://professionallinuxusersgroup.github.io/psc/syllabus.html)
 
 It was put together with care by a number of ProLUG group members referencing original instructional materials produced by Scott Champine ([Het Tanis](https://youtube.com/playlist?list=PLyuZ_vuAWmpqZcL95P1AOQ57qKf7UnkMF\&si=zwEiyTz6ff3ovTNH)).
 
