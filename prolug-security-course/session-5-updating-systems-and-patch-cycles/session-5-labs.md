@@ -38,7 +38,7 @@ A **production-grade software supply chain** with controlled repositories and au
 
 </details>
 
-### Lab Progression
+### ⏳ Lab Progression
 
 {% stepper %}
 {% step %}

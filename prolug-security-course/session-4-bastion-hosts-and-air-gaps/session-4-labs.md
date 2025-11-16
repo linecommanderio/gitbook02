@@ -36,7 +36,7 @@ A **controlled access infrastructure** for air-gapped systems:
 
 </details>
 
-### Lab Progression
+### ⏳ Lab Progression
 
 {% stepper %}
 {% step %}

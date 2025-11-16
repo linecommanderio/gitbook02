@@ -41,7 +41,7 @@ This hands-on lab sequence makes us analyze PAM security controls, deploy an Ope
 
 </details>
 
-### Lab Progression
+### ⏳ Lab Progression
 
 You'll work through five progressive challenges, each building on the previous:
 

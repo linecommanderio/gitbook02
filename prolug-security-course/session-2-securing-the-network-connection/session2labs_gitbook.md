@@ -80,21 +80,19 @@ By completing these labs, you'll be able to add to your resume:
 
 This sequence mirrors the actual enterprise security engineering workflow—from assessment through manual hardening to scaled automation.
 
-```mermaid
-graph LR
-    A[🔍 Reconnaissance] --> B[📋 STIG Setup]
-    B --> C[🌐 Network STIGs]
-    C --> D[🔥 Firewall Analysis]
-    D --> E[🚪 Port Exposure]
-    E --> F[🤖 Automation Tools]
-    
-    style A fill:#396AB1,stroke:#333,stroke-width:2px,color:#fff
-    style B fill:#DA7C30,stroke:#333,stroke-width:2px,color:#fff
-    style C fill:#3E9651,stroke:#333,stroke-width:2px,color:#fff
-    style D fill:#CC2529,stroke:#333,stroke-width:2px,color:#fff
-    style E fill:#6B4C9A,stroke:#333,stroke-width:2px,color:#fff
-    style F fill:#922428,stroke:#333,stroke-width:2px,color:#fff
-```
+{% stepper %}
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+{% endstepper %}
 
 ### Phase 1: Foundation (Labs 1-2)
 

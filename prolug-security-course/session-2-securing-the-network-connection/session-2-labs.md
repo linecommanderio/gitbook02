@@ -24,41 +24,58 @@ layout:
 
 I'm building six progressively complex labs that take me from baseline security assessment through manual STIG remediation to automated compliance tooling.
 
-The progression mirrors real-world security engineering:
-
 <details>
 
-<summary>🔍 Reconnaissance &#x26; Setup</summary>
+<summary>🏗️ What We'll Build</summary>
 
-> Baseline the system's current security posture by examining kernel parameters, cryptographic settings, and security mechanisms. Then configure STIG Viewer 2.18 (the official DoD compliance tool) with RHEL 9 STIG benchmarks.
+Build production-grade security engineering capabilities that mirror real-world DoD and enterprise compliance workflows.
+
+* [ ] Baseline your system's security posture by examining kernel parameters, cryptographic settings, and security mechanisms
+* [ ] Configure the official DoD compliance tool (STIG Viewer 2.18) and import RHEL 9 STIG benchmarks
+* [ ] Analyze and fix actual network security STIGs (TCP SYN cookies, martian packets)
+* [ ] Understand firewall security controls and categorize them (preventative, detective, corrective)
+* [ ] Real-world scenario: Expose Prometheus node\_exporter through `firewalld` while maintaining security
+* [ ] Generate automated scripts using DISA Ansible (985 defaults, 2,991 tasks) and OpenSCAP tools
 
 </details>
 
-<details>
+### ⏳ Lab Progression
 
-<summary>🔧 Manual Remediation</summary>
+{% stepper %}
+{% step %}
+#### **🔍 Security Reconnaissance**  → Understand your starting point before hardening.
+{% endstep %}
 
-> Analyze and fix actual network security STIGs (TCP SYN cookies, martian packet handling, firewall controls), learning to categorize control types and understand what each STIG accomplishes. Solve real scenarios like exposing services through firewalls while maintaining security.
+{% step %}
+#### **📋 STIG Viewer Setup** → Learn the industry-standard assessment workflow.
+{% endstep %}
 
-</details>
+{% step %}
+#### **🌐 Network STIG Remediation** → Learn systematic STIG analysis
+{% endstep %}
 
-<details>
+{% step %}
+#### **🔥 Firewall STIG Analysis** → Learn how these controls create defense-in-depth.
+{% endstep %}
 
-<summary>🤖 Automation at Scale</summary>
+{% step %}
+#### **🚪 Port Exposure** → Balance operational needs with security requirements.
+{% endstep %}
 
-> Generate automated remediation scripts using both official DISA Ansible playbooks and OpenSCAP tools. Learn when to apply automation and when manual judgment is required—the critical skill that makes security engineers valuable.
-
-</details>
+{% step %}
+#### **🤖 Automated Remediation** → Learn when to apply automation and when human judgment is required
+{% endstep %}
+{% endstepper %}
 
 {% hint style="info" %}
 **What Makes This Real**
 
-These aren't simulations—I'm using actual RHEL 9 STIGs, official DoD remediation Ansible, STIG Viewer 2.18, and production firewalld configurations.
+These aren't simulations—I'm using actual RHEL 9 STIGs, official DoD remediation Ansible, STIG Viewer 2.18, and production `firewalld` configurations.
 
 > &#x20;_The analysis methodology (**What's the problem? What's the fix? What control type?**) is exactly how security engineers evaluate compliance requirements in government and enterprise environments._
 {% endhint %}
 
-By the end, we will understand both the manual security engineering workflow (critical for learning) and the automated compliance tooling (critical for scaling). More importantly, we'll learn **when to apply automation and when human judgment is required**—that's what makes a security engineer valuable.
+By the end, we will understand both the manual security engineering workflow (critical for learning) and the automated compliance tooling (critical for scaling). More importantly, we'll learn **when to apply automation and when human judgment is required**.
 
 ***
 
@@ -527,10 +544,16 @@ This is your value as a security engineer: understanding which controls to imple
 {% endstep %}
 {% endstepper %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 🎓 Professional Development
 
-These labs mirror actual enterprise security engineering workflows—from baseline assessment through manual STIG remediation to automated compliance tooling. You'll analyze security controls, implement fixes manually to understand them deeply, then scale with automation using the same tools required in government and corporate environments.
+These labs mirror actual enterprise security engineering workflows—from baseline assessment through manual STIG remediation to automated compliance tooling.
 
-**Career Impact:** _Add "STIG remediation experience," "DoD security compliance implementation," and "OpenSCAP automation" to your resume._
+> _You'll analyze security controls, implement fixes manually to understand them deeply, then scale with automation using the same tools required in government and corporate environments._
+
+**Career Impact**: Add these skills to your project section on your resume:
+
+* **"STIG remediation experience"**
+* **"DoD security compliance implementation"**
+* **"OpenSCAP automation"**&#x20;
 {% endhint %}
