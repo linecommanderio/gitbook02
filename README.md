@@ -36,17 +36,26 @@ We'll practice to securely build, deploy, integrate, and monitor Linux systems. 
 **What Makes This Different**
 
 We use the same compliance frameworks, security tools, and hardening procedures used in government and enterprise environments.&#x20;
-
-
+{% endhint %}
 
 Every session builds hands-on skills that translate directly to professional security engineering roles.
+
+{% hint style="success" %}
+**Resume Value**:
+
+Instead of just listing "completed security course," you can now state specific competencies like:
+
+* "Integrated Linux systems with enterprise identity and access management frameworks"
+* "Implemented DISA STIG security baselines across production database infrastructure"
+
+These specific skills match what employers actively seek in Linux security engineering roles
 {% endhint %}
 
 ***
 
 ### 🎯 Learning Goals
 
-By the end of this jurney, we will be able to:
+By the end of this Learning Journey, we will be able to:
 
 {% hint style="success" %}
 1. 🛠️ **Build and configure** a Linux system to adhere to compliance frameworks
@@ -84,7 +93,7 @@ By the end of this jurney, we will be able to:
 
 ### 🗓️ 10 Sessions
 
-<table data-view="cards"><thead><tr><th>Session</th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="README (2).md"><em>Session 1</em></a></td><td>🛡️ <strong>Build Standards and Compliance</strong></td><td><sub><em>Foundation in security frameworks, STIG remediation, and compliance reporting</em></sub></td><td><a href="README (2).md">README (2).md</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-2-securing-the-network-connection/"><em>Session 2</em></a></td><td><strong>🔐 Securing the Network Connection</strong></td><td><sub><em>Network security architecture, firewall configuration, and traffic control</em></sub></td><td><a href="prolug-security-course/session-2-securing-the-network-connection/">session-2-securing-the-network-connection</a></td><td><a href=".gitbook/assets/session2-ezgif.webp">session2-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-3-user-access-and-system-integration/"><em>Session 3</em></a></td><td>🪪 <strong>User Access and System Integration</strong></td><td><sub><em>Identity and access management, LDAP integration, and trust authorities</em></sub></td><td><a href="prolug-security-course/session-3-user-access-and-system-integration/">session-3-user-access-and-system-integration</a></td><td><a href=".gitbook/assets/session3-ezgif.webp">session3-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/"><em>Session 4</em></a></td><td>📵 <strong>Bastion Hosts and Air-Gaps</strong></td><td><sub><em>Controlled access architectures and network isolation strategies</em></sub></td><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/">session-4-bastion-hosts-and-air-gaps</a></td><td><a href=".gitbook/assets/session6-ezgif.webp">session6-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-5-updating-systems-and-patch-cycles/"><em>Session 5</em></a></td><td>🔄 <strong>Updating Systems and Patch Cycles</strong></td><td><sub><em>Lifecycle management, vulnerability reduction, and change control</em></sub></td><td></td><td><a href=".gitbook/assets/session5-ezgif.webp">session5-ezgif.webp</a></td></tr><tr><td><em>Session 6</em></td><td>🔎 <strong>Monitoring and Parsing Logs</strong></td><td><sub><em>Log analysis, SIEM integration, and security event detection</em></sub></td><td></td><td></td></tr><tr><td><em>Session 7</em></td><td>🚨 <strong>Monitoring and Alerting</strong></td><td><sub><em>Real-time alerting with Kafka, Loki, Grafana stack</em></sub></td><td></td><td></td></tr><tr><td><em>Session 8</em></td><td>⚠️ <strong>Configuration Drift and Remediation</strong></td><td><sub><em>Baseline management, configuration monitoring, and remediation automation</em></sub></td><td></td><td></td></tr><tr><td><em>Session 9</em></td><td>🔏 <strong>Certificate and Key Madness</strong></td><td><sub><em>PKI, certificate lifecycle, and cryptographic fundamentals</em></sub></td><td></td><td></td></tr><tr><td><em>Session 10</em></td><td><strong>🎓 Recap and Final Project</strong></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Session</th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a href="broken-reference"><em>Session 1</em></a></td><td>🛡️ <strong>Build Standards and Compliance</strong></td><td><sub><em>Foundation in security frameworks, STIG remediation, and compliance reporting</em></sub></td><td><a href="broken-reference">Broken link</a></td><td><a href=".gitbook/assets/sess1-ezgif.webp">sess1-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-2-securing-the-network-connection/"><em>Session 2</em></a></td><td><strong>🔐 Securing the Network Connection</strong></td><td><sub><em>Network security architecture, firewall configuration, and traffic control</em></sub></td><td><a href="prolug-security-course/session-2-securing-the-network-connection/">session-2-securing-the-network-connection</a></td><td><a href=".gitbook/assets/session2-ezgif.webp">session2-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-3-user-access-and-system-integration/"><em>Session 3</em></a></td><td>🪪 <strong>User Access and System Integration</strong></td><td><sub><em>Identity and access management, LDAP integration, and trust authorities</em></sub></td><td><a href="prolug-security-course/session-3-user-access-and-system-integration/">session-3-user-access-and-system-integration</a></td><td><a href=".gitbook/assets/session3-ezgif.webp">session3-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/"><em>Session 4</em></a></td><td>📵 <strong>Bastion Hosts and Air-Gaps</strong></td><td><sub><em>Controlled access architectures and network isolation strategies</em></sub></td><td><a href="prolug-security-course/session-4-bastion-hosts-and-air-gaps/">session-4-bastion-hosts-and-air-gaps</a></td><td><a href=".gitbook/assets/session6-ezgif.webp">session6-ezgif.webp</a></td></tr><tr><td><a href="prolug-security-course/session-5-updating-systems-and-patch-cycles/"><em>Session 5</em></a></td><td>🔄 <strong>Updating Systems and Patch Cycles</strong></td><td><sub><em>Lifecycle management, vulnerability reduction, and change control</em></sub></td><td></td><td><a href=".gitbook/assets/session5-ezgif.webp">session5-ezgif.webp</a></td></tr><tr><td><em>Session 6</em></td><td>🔎 <strong>Monitoring and Parsing Logs</strong></td><td><sub><em>Log analysis, SIEM integration, and security event detection</em></sub></td><td></td><td></td></tr><tr><td><em>Session 7</em></td><td>🚨 <strong>Monitoring and Alerting</strong></td><td><sub><em>Real-time alerting with Kafka, Loki, Grafana stack</em></sub></td><td></td><td></td></tr><tr><td><em>Session 8</em></td><td>⚠️ <strong>Configuration Drift and Remediation</strong></td><td><sub><em>Baseline management, configuration monitoring, and remediation automation</em></sub></td><td></td><td></td></tr><tr><td><em>Session 9</em></td><td>🔏 <strong>Certificate and Key Madness</strong></td><td><sub><em>PKI, certificate lifecycle, and cryptographic fundamentals</em></sub></td><td></td><td></td></tr><tr><td><em>Session 10</em></td><td><strong>🎓 Recap and Final Project</strong></td><td></td><td></td><td></td></tr></tbody></table>
 
 {% hint style="success" %}
 **Progressive Learning Path**
@@ -94,11 +103,17 @@ Each session builds on previous knowledge—from foundational compliance (Sessio
 
 ***
 
-## 📖 The Course Referenced
+### 📖 The Course Referenced
 
 This Learning Journey contains all materials pertaining to the [**ProLUG Security Engineering Course**](https://professionallinuxusersgroup.github.io/psc/syllabus.html).
 
 It was put together with care by a number of ProLUG group members referencing original instructional materials produced by Scott Champine ([Het Tanis](https://youtube.com/playlist?list=PLyuZ_vuAWmpqZcL95P1AOQ57qKf7UnkMF\&si=zwEiyTz6ff3ovTNH)).
+
+{% hint style="info" %}
+**Course Philosophy**: This course is designed to secure Linux in corporate environments. You are a security administrator or engineer responsible for deploying and hardening systems to meet organizational standards.
+
+> _Our job is to_ **implement structured security controls** _and_ **maintain compliance documentation** _that protects the organization while enabling necessary operations._
+{% endhint %}
 
 <details>
 
@@ -153,3 +168,54 @@ As you work on course deliverables, you're encouraged to share ideas with peers 
 
 You'll discover that others think differently than you do. You'll gain insights you can't get from documentation alone. This collaborative learning is essential in security engineering—you'll work with diverse teams throughout your career.
 {% endhint %}
+
+### 💻 Lab Environment Options
+
+Choose the environment that works best for your learning style and resources:
+
+{% tabs %}
+{% tab title="Killer Coda (Recommended)" %}
+#### [killercoda.com](https://killercoda.com/het-tanis)
+
+**Free Online Linux Environments**
+
+* No local setup required
+* Access from any web browser
+* Pre-configured with necessary tools
+* Perfect for this unit's MariaDB lab
+
+**Best For**: Quick start, minimal setup, learning on any device
+{% endtab %}
+
+{% tab title="Home Lab" %}
+**Build Your Own Environment**
+
+* Full control over configuration
+* Persistent environment across sessions
+* Learn infrastructure setup skills
+
+**Recommended Distributions**:
+
+* RHEL, Fedora, Rocky Linux, or AlmaLinux
+* Red Hat family is \~85% of enterprise environments
+* Government and large corporate infrastructures heavily use RHEL
+
+**Best For**: Deep learning, building portfolio, career preparation
+{% endtab %}
+
+{% tab title="ProLUG Lab" %}
+#### [ProLUG Discord](https://discord.com/invite/m6VPPD9usw)
+
+**Dedicated Course Infrastructure**
+
+* 44 total lab machines available
+* 25 systems for security engineering course
+* Hammer Systems for various scenarios
+
+**Access**: Request via Discord (not posted publicly)
+
+**Best For**: Consistent environment, pre-configured systems, group learning
+{% endtab %}
+{% endtabs %}
+
+***

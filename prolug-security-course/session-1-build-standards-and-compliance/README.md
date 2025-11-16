@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/sess1-ezgif.webp
+coverY: 16.331368956931055
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,7 +20,7 @@ layout:
     visible: true
 ---
 
-# session\_1\_gitbook
+# 🛡️ Session 1: Build Standards and Compliance
 
 We will focus on **establishing security foundations** through industry standards, compliance frameworks, and practical STIG implementation.
 
@@ -31,7 +36,7 @@ Building standards and compliance in cybersecurity engineering ensures that syst
 
 ***
 
-## 📚 Learning Objectives
+### 📚 Learning Objectives
 
 By the end of Session 1, we will have explored skills in:
 
@@ -53,7 +58,7 @@ By the end of Session 1, we will have explored skills in:
 
 ***
 
-## 🎯 Relevance & Context
+### 🎯 Relevance & Context
 
 As the shepherds of sensitive data and systems, it is the **ethical and legal duty** of individuals who administer and build these systems to protect them from malicious actors.
 
@@ -148,7 +153,7 @@ Every job posting for Linux Sysadmins or Engineers mention concepts like Identit
 {% hint style="warning" %}
 **📋 Required Foundation**
 
-To be successful in Session 1, you must have:
+To be successful in Session 1, you should have:
 
 **Linux Administration Fundamentals**:
 
@@ -170,181 +175,5 @@ To be successful in Session 1, you must have:
 * Service management with systemd
 * Network connectivity fundamentals
 {% endhint %}
-
-***
-
-
-
-Throughout this course, we'll cover these critical domains:
-
-{% stepper %}
-{% step %}
-### Unit 1: Build Standards & Compliance
-
-Foundation in security frameworks, STIG remediation, and compliance reporting
-{% endstep %}
-
-{% step %}
-### Unit 2: Securing Network Connections
-
-Network security architecture, firewall configuration, and traffic control
-{% endstep %}
-
-{% step %}
-### Unit 3: User Access & System Integration
-
-Identity and access management, LDAP integration, and trust authorities
-{% endstep %}
-
-{% step %}
-### Unit 4: Bastion Hosts & Air Gaps
-
-Controlled access architectures and network isolation strategies
-{% endstep %}
-
-{% step %}
-### Unit 5: System Updates & Patch Cycles
-
-Lifecycle management, vulnerability reduction, and change control
-{% endstep %}
-
-{% step %}
-### Unit 6: Monitoring & Log Parsing
-
-Log analysis, SIEM integration, and security event detection
-{% endstep %}
-
-{% step %}
-### Unit 7: Monitoring & Alerting
-
-Real-time alerting with Kafka, Loki, Grafana stack
-{% endstep %}
-
-{% step %}
-### Unit 8: Configuration Drift
-
-Baseline management, configuration monitoring, and remediation automation
-{% endstep %}
-
-{% step %}
-### Unit 9: Certificates & Key Management
-
-PKI, certificate lifecycle, and cryptographic fundamentals
-{% endstep %}
-{% endstepper %}
-
-***
-
-## 🏆 Course Objectives
-
-By completing this course, you'll be able to demonstrate these industry-relevant competencies:
-
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Identity &#x26; Access Management</strong></td><td>Integrate Linux with enterprise IAM frameworks using SSSD, winbind, and trust authorities</td><td></td></tr><tr><td><strong>Security Hardening</strong></td><td>Implement industry-standard security controls and STIG compliance across Linux infrastructure</td><td></td></tr><tr><td><strong>Monitoring &#x26; Alerting</strong></td><td>Deploy enterprise monitoring solutions for 24/7 security operations support</td><td></td></tr><tr><td><strong>Configuration Management</strong></td><td>Prevent and remediate configuration drift across large-scale deployments</td><td></td></tr></tbody></table>
-
-{% hint style="success" %}
-**Resume Value**:
-
-Instead of just listing "completed security course," you can now state specific competencies like:
-
-* "Integrated Linux systems with enterprise identity and access management frameworks"
-* "Implemented DISA STIG security baselines across production database infrastructure"
-
-These specific skills match what employers actively seek in Linux security engineering roles.
-{% endhint %}
-
-***
-
-## 📖 Instructional Methods
-
-This course emphasizes **learner-centered activities** and hands-on practice:
-
-{% columns %}
-{% column width="50%" %}
-**Practical Labs**
-
-* Work with real systems and production-ready tools
-* Implement security controls in actual environments
-* Document your work using industry-standard formats
-
-**Discussion Forums**
-
-* Engage with peers and instructors
-* Share different perspectives and approaches
-* Learn from others' experiences and challenges
-
-{% hint style="info" %}
-**Why Discussions Matter**:
-
-People think differently than you do. You'll pick up intangible knowledge that you can't get from blog posts or forums—you're working with actual people in an academic setting.
-{% endhint %}
-{% endcolumn %}
-
-{% column width="50%" %}
-**Collaborative Learning**
-
-* Work individually or in study groups
-* Join scheduled study sessions in Discord
-* Get help from instructors and experienced peers
-
-**Real-World Projects**
-
-* Apply multiple concepts in integrated scenarios
-* Build portfolio-worthy demonstrations of capability
-* Solve problems similar to those in actual security roles
-
-{% hint style="warning" %}
-**Time Commitment**:
-
-Plan for hands-on work. When you encounter problems (like missing plugins or outdated STIGs), you'll need to research solutions—this is the crux of why security engineers are valuable.
-{% endhint %}
-{% endcolumn %}
-{% endcolumns %}
-
-***
-
-## 💻 Lab Environment Options
-
-Choose the environment that works best for your learning style and resources:
-
-{% tabs %}
-{% tab title="Killer Coda (Recommended)" %}
-**Free Online Linux Environments**
-
-* No local setup required
-* Access from any web browser
-* Pre-configured with necessary tools
-* Perfect for this unit's MariaDB lab
-
-**Best For**: Quick start, minimal setup, learning on any device
-{% endtab %}
-
-{% tab title="Home Lab" %}
-**Build Your Own Environment**
-
-* Full control over configuration
-* Persistent environment across sessions
-* Learn infrastructure setup skills
-
-**Recommended Distributions**:
-
-* RHEL, Fedora, Rocky Linux, or AlmaLinux
-* Red Hat family is \~85% of enterprise environments
-* Government and large corporate infrastructures heavily use RHEL
-
-**Best For**: Deep learning, building portfolio, career preparation
-{% endtab %}
-
-{% tab title="ProLUG Lab" %}
-**Dedicated Course Infrastructure**
-
-* 44 total lab machines available
-* 25 systems for security engineering course
-* Hammer Systems for various scenarios
-
-**Access**: Request via Discord (not posted publicly)
-
-**Best For**: Consistent environment, pre-configured systems, group learning
-{% endtab %}
-{% endtabs %}
 
 ***
