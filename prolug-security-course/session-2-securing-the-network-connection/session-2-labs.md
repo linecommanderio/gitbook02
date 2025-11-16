@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/lab-ezgif.png
-coverY: -211.70348599235945
+coverY: -219.5096188830271
 layout:
   width: default
   cover:

@@ -1,6 +1,6 @@
 ---
-cover: ../../.gitbook/assets/lab-ezgif.webp
-coverY: -77.77361870679462
+cover: ../../.gitbook/assets/lab-ezgif.png
+coverY: -223.2639998237675
 layout:
   width: default
   cover:
@@ -82,7 +82,7 @@ By the end, we'll understand:&#x20;
 
 ***
 
-## 🛠️ Labs to Build Here
+### 🛠️ Labs to Build Here
 
 {% stepper %}
 {% step %}
@@ -344,7 +344,9 @@ Build a production-grade LDAP directory service.
 {% hint style="info" %}
 **Real-World Context**
 
-You'll likely not build an LDAP server in a real corporate environment—most use Active Directory. We're doing this for deep understanding of directory service architecture and the ability to integrate Linux systems with any directory backend.
+You'll likely not build an LDAP server in a real corporate environment since most use Active Directory.&#x20;
+
+We're doing this for deep understanding of directory service architecture and the ability to integrate Linux systems with any directory backend.
 
 **Simplified Setup**: There's a file at `/lab_work/identity_and_access_management.tar.gz` with pre-built LDIF files to reduce typing.
 {% endhint %}
@@ -750,15 +752,11 @@ This is the same architecture used for Active Directory domain joins—SSSD just
 {% hint style="warning" %}
 🎓 **Professional Development**
 
-These labs mirror actual enterprise IAM engineering workflows—from authentication security analysis through directory infrastructure deployment to system integration. You'll understand PAM authentication, build OpenLDAP directory services, and configure SSSD integration using the same tools and processes required in corporate environments.
+These labs mirror actual enterprise IAM engineering workflows—from authentication security analysis through directory infrastructure deployment to system integration.&#x20;
+
+You'll understand PAM authentication, build OpenLDAP directory services, and configure SSSD integration using the same tools and processes required in corporate environments.
 
 **Career Impact**: _Add "Enterprise LDAP deployment," "SSSD/Active Directory integration," and "PAM security hardening" to your resume._
 {% endhint %}
 
 ***
-
-Page cover recommendation:
-
-* Hero-width cover showing interconnected user icons radiating from a central directory server symbol, with lock/key iconography and authentication flow arrows. Dark gradient background (deep purple to black) with subtle LDAP schema tree overlay.
-
-Page icon: 🔐 (locked with key) — Represents secure identity and access management
