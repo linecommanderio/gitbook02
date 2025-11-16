@@ -1,6 +1,6 @@
 ---
 cover: .gitbook/assets/intro-ezgif.webp
-coverY: 0
+coverY: 1.9637486924686192
 layout:
   width: wide
   cover:

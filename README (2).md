@@ -1,6 +1,6 @@
 ---
 cover: .gitbook/assets/sess1-ezgif.webp
-coverY: 0
+coverY: 17.110860185100965
 coverHeight: 241
 layout:
   width: wide

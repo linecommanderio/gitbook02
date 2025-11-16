@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/session2-ezgif.webp
-coverY: 0
+coverY: -2.974083164680735
 layout:
   width: default
   cover:
