@@ -1,6 +1,12 @@
 ---
+cover: ../../.gitbook/assets/lab-ezgif.webp
+coverY: 0
+coverHeight: 700
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
