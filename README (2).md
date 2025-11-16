@@ -52,13 +52,13 @@ Getting straight to the hands-on, by applying these security controls to product
 By the end of Session 1, we will have explored:
 
 {% tabs %}
-{% tab title="Core Competencies" %}
+{% tab title="💪 Core Competencies" %}
 1. **Security Frameworks**: STIGs, CIS Controls, NIST Cybersecurity Framework
 2. **Regulatory Compliance**: Industry standards for system administration and deployment
 3. **STIG Remediation**: Hands-on security control implementation and validation
 {% endtab %}
 
-{% tab title="Professional Skills" %}
+{% tab title="👔 Professional Skills" %}
 4. **Risk Management**: Understanding and addressing organizational risk vectors
 5. **Documentation**: Security reporting practices for compliance teams
 {% endtab %}

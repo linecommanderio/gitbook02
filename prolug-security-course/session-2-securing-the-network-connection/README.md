@@ -41,13 +41,13 @@ We'll move from conceptual understanding to hands-on implementation, examining h
 By the end of Session 2, you will have foundational knowledge and skills in:
 
 {% tabs %}
-{% tab title="Core Competencies" %}
+{% tab title="💪 Core Competencies" %}
 1. **STIG Analysis**: Identifying and analyzing STIGs related to Linux networking
 2. **Name Resolution Security**: Understanding and configuring secure name resolution using `nsswitch.conf` and DNS
 3. **Network Monitoring**: Utilizing `tcpdump`, `ngrep`, `ss`, and `netstat` to monitor network behavior
 {% endtab %}
 
-{% tab title="Professional Skills" %}
+{% tab title="👔 Professional Skills" %}
 4. **Compliance Assessment**: Applying OpenSCAP and SCC tools for network compliance assessments
 5. **Threat Intelligence**: Exploring known network-based exploits using the Diamond Model of Intrusion Analysis
 6. **Security Trade-offs**: Understanding the balance between security hardening and system functionality
