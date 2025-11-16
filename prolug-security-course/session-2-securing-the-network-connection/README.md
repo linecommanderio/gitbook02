@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/session2-ezgif.webp
-coverY: -2.974083164680735
+coverY: 0
 layout:
   width: default
   cover:
@@ -22,29 +22,29 @@ layout:
 
 # 🔐 Session 2: Securing the Network Connection
 
-Understanding and implementing network standards and compliance measures makes security controls of critical importance very effective. Networks represent one of the most common attack vectors in enterprise systems—and securing them is foundational to defensive security engineering.
+We will focus on **understanding and implementing network standards and compliance measures** that make security controls critically effective.
 
-This session focuses on **analyzing, configuring, and hardening** networking components using industry-standard tools and frameworks. You'll work with STIGs, OpenSCAP, DNS configurations, and network monitoring tools to reduce ingress risk and respond effectively to threats.
+This session introduces foundational knowledge for analyzing, configuring, and hardening networking components using enterprise-grade tools and frameworks including STIGs, OpenSCAP, and secure DNS configurations.
+
+Network security isn't about memorizing commands—it's about understanding how data flows through your systems and implementing controls that prevent unauthorized access while maintaining operational efficiency.
 
 {% hint style="info" %}
-**Defensive Security Focus** This course emphasizes the **defensive side** of security engineering—locking down servers and protecting systems against intrusion. We're building resilient infrastructure that can withstand real-world attacks.
+**Course Context**: This is Week 2 of our defensive security focus. We're building on last week's control categories to **lock down server network connections** and establish secure communication boundaries.
 
-> **Key Insight**: _Attackers either go **around** controls or **through** controls. It's much easier to go around them than through them. Your job is to eliminate paths around your technical controls._
+> _Our job is to_ **reduce ingress risk** _through_ **structured standards and automated compliance tools** _that defend against network-based attacks._
 {% endhint %}
-
-We'll move from conceptual understanding to hands-on implementation, examining how security controls actually work in production Linux systems.
 
 ***
 
-## 📚 Learning Objectives
+### 📚 Learning Objectives
 
-By the end of Session 2, you will have foundational knowledge and skills in:
+By the end of Session 2, the skillset we will have explored:
 
 {% tabs %}
 {% tab title="💪 Core Competencies" %}
-1. **STIG Analysis**: Identifying and analyzing STIGs related to Linux networking
-2. **Name Resolution Security**: Understanding and configuring secure name resolution using `nsswitch.conf` and DNS
-3. **Network Monitoring**: Utilizing `tcpdump`, `ngrep`, `ss`, and `netstat` to monitor network behavior
+1. **STIG Analysis**: Identifying and analyzing Security Technical Implementation Guides related to Linux networking
+2. **Secure Name Resolution**: Understanding and configuring `nsswitch.conf` and DNS for secure hostname lookups
+3. **Network Monitoring**: Using `tcpdump`, `ngrep`, `ss`, and `netstat` to monitor and analyze network behavior
 {% endtab %}
 
 {% tab title="👔 Professional Skills" %}
@@ -52,88 +52,101 @@ By the end of Session 2, you will have foundational knowledge and skills in:
 5. **Threat Intelligence**: Exploring known network-based exploits using the Diamond Model of Intrusion Analysis
 6. **Security Trade-offs**: Understanding the balance between security hardening and system functionality
 {% endtab %}
+
+{% tab title="🔧 Technical Skills" %}
+* **STIG Remediation**: Generating and applying Ansible playbooks and Bash scripts for compliance fixes
+* **Control Implementation**: Distinguishing between technical, managerial, operational, and physical controls
+* **Attack Vector Recognition**: Understanding how attackers go _around_ versus _through_ security controls
+* **Configuration Validation**: Verifying network hardening measures with command-line tools
+* **Automation Fundamentals**: Reading and modifying Ansible playbooks for system hardening
+{% endtab %}
 {% endtabs %}
 
 ***
 
-## 🎯 Relevance & Context
+### 🎯 Relevance & Context
+
+**Networks represent one of the most common attack vectors in enterprise systems.**
+
+Misconfigured name resolution, open ports, and insecure protocols create doorways for intrusion that defenders must close systematically.
+
+#### Why Network Security Matters
 
 {% columns %}
-{% column width="58.333333333333336%" %}
-**Your Professional Responsibility**
+{% column width="60%" %}
+**The Challenge**:
 
-Networks are one of the **most common attack vectors** in enterprise systems. Misconfigured name resolution, open ports, and insecure protocols are doorways to intrusion. This session teaches you to reduce ingress risk and respond effectively to threats.
+* Network connections are the primary entry point for external attacks
+* Misconfigurations in DNS, open ports, and protocols create vulnerabilities
+* Manual compliance checking doesn't scale in enterprise environments
+* Organizations need provable, auditable security postures for compliance
 
+**The Solution**:
 
+* **STIGs provide standardized security configurations** developed by DISA for government and enterprise use
+* **OpenSCAP automates compliance assessment** across hundreds of security rules simultaneously
+* **Network monitoring tools** provide visibility into what's actually happening on your systems
+* **Automated remediation** through Ansible and Bash reduces human error and ensures consistency
 
-{% hint style="danger" %}
-**Real Example**: Instead of brute-forcing SSH, attackers steal credentials or exploit MFA fatigue (going around).
+**Real-World Application**: Think of network security like airport immigration control.&#x20;
 
-> _**Your job is to eliminate paths around your technical controls.**_
-{% endhint %}
+* You don't just check one person's passport—you have _standardized procedures_, _automated scanning systems_, and _multiple layers of verification_ that process thousands of travelers efficiently while maintaining security.&#x20;
 
-
-
-**Control Types Matter**:
-
-Understanding control categories is **critical** to defensive security:
-
-<table><thead><tr><th width="115.978515625">Control Type</th><th width="111.123046875">Description</th><th>Example</th></tr></thead><tbody><tr><td><strong>Technical</strong></td><td>Applied to systems, cannot be bypassed</td><td>SSH disallows root login</td></tr><tr><td><strong>Physical</strong></td><td>Real-world barriers</td><td>Locked server room</td></tr><tr><td><strong>Managerial</strong></td><td>Requires authority to enforce</td><td>Security policies</td></tr><tr><td><strong>Operational</strong></td><td>Procedures and practices</td><td>SOPs, change management</td></tr></tbody></table>
-
-**Key Insight**: Technical and physical controls **prevent** actions. Managerial and operational controls require **authority** and \*\*will—if someone doesn't respect that authority, they can ignore the control entirely.
+That's exactly what STIGs and OpenSCAP do for your Linux systems.
 {% endcolumn %}
 
-{% column width="43.333333333333336%" %}
+{% column width="40%" %}
 {% hint style="success" %}
-**Network Security Skills**
+**What You're Building**:
 
-I'm learning that network security isn't just about firewalls and access controls—it's about understanding the **entire data flow** from application layer to physical layer, monitoring for anomalies, and implementing defense-in-depth.
-
-**Key Realization**: My network configurations **directly determine** organizational risk exposure. Misconfigured services create attack vectors that skilled adversaries will discover and exploit.
+An automated compliance system that assesses your network security posture against 401+ STIG rules, generates remediation playbooks, and provides verification of implemented controls.
 {% endhint %}
 
 
+
+
+
+{% hint style="warning" %}
+**Critical Understanding**:
+
+Understanding _what_ each control does and _why_ it matters is essential for making informed decisions about which controls to implement.
+{% endhint %}
 
 
 
 
 
 {% hint style="info" %}
-**Key Resources**
+**Career Reality**:
 
-* **DISA STIGs**: Official DoD network security guidance ([https://public.cyber.mil/stigs](https://public.cyber.mil/stigs))
-* **OpenSCAP**: Automated compliance assessment ([https://www.open-scap.org/](https://www.open-scap.org/))
-* **Diamond Model**: Structured threat analysis framework for understanding adversary behavior
-* **SCAP Security Guide**: Comprehensive security content automation
-
-**Professional Development**: These skills are **required** for network security engineering, SOC analyst, incident response, and systems engineering roles in high-security environments including DoD, defense contractors, and Fortune 500 enterprises.
+As system engineers, building resilient systems requires deep understanding of how data flows through network pathways and what tools can monitor and secure them.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-## ✅ Prerequisites
+### ✅ Prerequisites
 
 {% hint style="warning" %}
 **📋 Required Foundation**
 
-To be successful in Session 2, you must possess Linux Administration competencies including:
+To be successful in Session 2, you must know:
 
-* **Command Line Proficiency**: BASH shell operations and command chaining
-* **Package Management**: Installing and updating system packages via DNF/YUM
-* **Network Fundamentals**: TCP/IP, DNS, routing concepts, and network protocols
-* **System Tools**: `sysctl`, `firewalld`, `grep`, `ss`, `netstat`, and related utilities
-* **Text Editing**: File manipulation using `vim` or other CLI editors
-* **Security Tools**: `oscap`, `tcpdump`, and network analysis utilities
-* **Required Software**: STIG Viewer v2.18 from [https://public.cyber.mil/stigs/downloads/](https://public.cyber.mil/stigs/downloads/)
+* **Command Line Proficiency**: Navigating the Linux filesystem, running commands, using pipes and redirects
+* **Text Editor Skills**: Editing files with `vim` or another command-line editor
+* **Package Management**: Installing software with `dnf`, `yum`, or `apt`
+* **Basic Networking**: Understanding TCP/IP, DNS concepts, network interfaces
+* **System Tools**: Using `grep`, `sysctl`, `systemctl`, and similar utilities
+* **File Editing**: Creating and modifying configuration files
 
-**Foundation Requirement**: This session builds on Session 1's security framework foundation. You must understand:
+**Foundation Requirement**: Review these concepts if needed:
 
-* Control types (technical, managerial, operational, physical)
-* Control categories (preventative, detective, corrective, compensating)
-* STIG structure and remediation workflows
-* Professional security documentation standards
+* Linux directory structure and file permissions
+* How services and daemons work in Linux
+* Basic shell scripting (reading, not necessarily writing)
+* Understanding of IP addressing and subnetting
+* SSH connectivity and authentication concepts
 {% endhint %}
 
 ***
