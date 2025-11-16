@@ -1,7 +1,7 @@
 ---
 cover: ../../.gitbook/assets/lab-ezgif.webp
-coverY: 0
-coverHeight: 466
+coverY: -78.59421900582136
+coverHeight: 236
 layout:
   width: default
   cover:
