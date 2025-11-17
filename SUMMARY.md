@@ -9,6 +9,8 @@
   * [📢 Security Unit 1 Discussion Post 2](prolug-security-course/session-1-build-standards-and-compliance/security-unit-1-discussion-post-2.md)
 * [🔐 Session 2: Securing the Network Connection](prolug-security-course/session-2-securing-the-network-connection/README.md)
   * [🛠️ Session 2 Labs](prolug-security-course/session-2-securing-the-network-connection/session-2-labs.md)
+  * [Security Unit 2 Discussion Post 1](prolug-security-course/session-2-securing-the-network-connection/security-unit-2-discussion-post-1.md)
+  * [s2d2gb](prolug-security-course/session-2-securing-the-network-connection/s2d2gb.md)
 * [🪪 Session 3: User Access and System Integration](prolug-security-course/session-3-user-access-and-system-integration/README.md)
   * [🛠️ Session 3 Labs](prolug-security-course/session-3-user-access-and-system-integration/session-3-labs.md)
 * [📵 Session 4: Bastion Hosts and Air-Gaps](prolug-security-course/session-4-bastion-hosts-and-air-gaps/README.md)
