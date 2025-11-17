@@ -749,7 +749,7 @@ This is the same architecture used for Active Directory domain joins—SSSD just
 {% endstep %}
 {% endstepper %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 🎓 **Professional Development**
 
 These labs mirror actual enterprise IAM engineering workflows—from authentication security analysis through directory infrastructure deployment to system integration.&#x20;
