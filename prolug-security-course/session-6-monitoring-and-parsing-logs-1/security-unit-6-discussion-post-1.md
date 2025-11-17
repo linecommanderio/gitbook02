@@ -31,7 +31,7 @@ There are 14 references at the end of the chapter. Follow them for more informat
 
 ***
 
-## 📚 Research References
+### 📚 Research References
 
 1. [Chapter 15 Investigating Systems →](https://google.github.io/building-secure-and-reliable-systems/raw/ch15.html#collect_appropriate_and_useful_logs)
 2. [Logging Cheat Sheet →](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
@@ -45,7 +45,7 @@ There are 14 references at the end of the chapter. Follow them for more informat
 
 ***
 
-## 1️⃣ <mark style="color:$danger;">What are some concepts that are new to you?</mark>
+### 1️⃣ <mark style="color:$danger;">What are some concepts that are new to you?</mark>
 
 {% hint style="success" %}
 **Key Learning**
@@ -63,7 +63,7 @@ Each framework reflects its organizational context:
 
 ***
 
-## 2️⃣ <mark style="color:$danger;">There are 5 conclusions drawn, do you agree with them? Would you add or remove anything from the list?</mark>
+### 2️⃣ <mark style="color:$danger;">There are 5 conclusions drawn, do you agree with them? Would you add or remove anything from the list?</mark>
 
 {% hint style="info" %}
 **Analysis Overview**
@@ -71,11 +71,11 @@ Each framework reflects its organizational context:
 All five conclusions are well aligned with industry best practices for security-relevant logging and investigations, including recommended approaches by SRE, security engineering, and compliance frameworks. Each addresses a core challenge found in investigating, debugging, and incident response missions.
 {% endhint %}
 
-### The Five Core Conclusions
+#### The Five Core Conclusions
 
 {% stepper %}
 {% step %}
-#### Design your logging to be immutable
+**Design your logging to be immutable**
 
 * **Principle**: Logging systems should make it difficult (ideally, impossible) to alter existing log entries, and all modifications must be traceable via audit trails.
 * **Implementation**: Remote and centralized logging hardens security against attackers seeking to cover their tracks.
@@ -83,7 +83,7 @@ All five conclusions are well aligned with industry best practices for security-
 {% endstep %}
 
 {% step %}
-#### Take privacy into consideration
+**Take privacy into consideration**
 
 * **Principle**: Logging design must include privacy protection measures, comply with regulations, and engage organizational stakeholders.
 * **Balance Required**: Logs should balance investigative needs with legal and privacy obligations.
@@ -91,7 +91,7 @@ All five conclusions are well aligned with industry best practices for security-
 {% endstep %}
 
 {% step %}
-#### Determine which security logs to retain
+**Determine which security logs to retain**
 
 * **Selection Criteria**: Choose which logs are most useful for investigations according to their signal-to-noise ratio.
 * **Avoid Logging Noise**: Exclude excess unrewarding logs such as routine firewall blocks that provide no investigative value.
@@ -99,7 +99,7 @@ All five conclusions are well aligned with industry best practices for security-
 {% endstep %}
 
 {% step %}
-#### Budget for logging
+**Budget for logging**
 
 * **Resource Reality**: Logging consumes storage, computation resources, and budget.
 * **Planning Required**: Organizations must explicitly plan for log storage, processing, and retention.
@@ -107,7 +107,7 @@ All five conclusions are well aligned with industry best practices for security-
 {% endstep %}
 
 {% step %}
-#### Robust, secure debugging access
+**Robust, secure debugging access**
 
 * **Security Imperative**: Debugging systems are privileged and must be secured against unauthorized access or misuse, especially in security investigations.
 * **Emergency Access Design**: Emergency access mechanisms should be designed carefully and alert on use.
@@ -117,7 +117,7 @@ All five conclusions are well aligned with industry best practices for security-
 
 ***
 
-## Framework Comparison: Google SRE vs OWASP vs NIST
+#### Framework Comparison: Google SRE vs OWASP vs NIST
 
 {% hint style="success" %}
 **Key Finding**
@@ -125,11 +125,11 @@ All five conclusions are well aligned with industry best practices for security-
 The five conclusions from Google's logging guidance overlap strongly with both OWASP and NIST recommendations, though each framework emphasizes some areas differently.
 {% endhint %}
 
-### Detailed Comparison by Principle
+#### Detailed Comparison by Principle
 
 {% tabs %}
 {% tab title="🔒 Immutable Logging" %}
-#### Immutable Logging & Integrity
+#### **Immutable Logging & Integrity**
 
 **Google SRE**
 
@@ -153,7 +153,7 @@ The five conclusions from Google's logging guidance overlap strongly with both O
 {% endtab %}
 
 {% tab title="🔐 Privacy" %}
-#### Privacy & Data Protection
+#### **Privacy & Data Protection**
 
 **Google SRE**
 
@@ -251,7 +251,7 @@ The five conclusions from Google's logging guidance overlap strongly with both O
 
 ***
 
-### Key Similarities Across All Frameworks
+#### Key Similarities Across All Frameworks
 
 <details>
 
@@ -281,7 +281,7 @@ Each encourages organizations to set explicit policies for log management, inclu
 
 ***
 
-### Nuances and Distinctions
+#### Nuances and Distinctions
 
 {% hint style="warning" %}
 **Framework-Specific Emphases**
@@ -317,7 +317,7 @@ OWASP is more focused on web/app log guidance and specific anti-patterns; NIST s
 
 ***
 
-## 3️⃣ <mark style="color:$danger;">In Julia Evan’s debugging blog, which shows that debugging is just another form of troubleshooting: What useful things do you learn about the relationship between these topics? /</mark> <mark style="color:$danger;"></mark><mark style="color:$danger;">Are there any techniques you already do that this helps solidify for you?</mark>
+### 3️⃣ <mark style="color:$danger;">In Julia Evan’s debugging blog, which shows that debugging is just another form of troubleshooting: What useful things do you learn about the relationship between these topics? / Are there any techniques you already do that this helps solidify for you?</mark>
 
 {% hint style="success" %}
 **Core Insight**
@@ -325,7 +325,7 @@ OWASP is more focused on web/app log guidance and specific anti-patterns; NIST s
 **Logging standards exist to enable the debugging workflow at scale**. The relationship is symbiotic: effective debugging requires good logs, and understanding debugging workflows informs what logs should capture.
 {% endhint %}
 
-### Key Relationships Between Debugging and Logging
+#### Key Relationships Between Debugging and Logging
 
 **1. Assumptions vs. Reality**
 
@@ -400,11 +400,11 @@ The debugging techniques (experiments, checking assumptions, information gatheri
 
 ***
 
-### Techniques This Solidifies
+#### Techniques This Solidifies
 
 {% stepper %}
 {% step %}
-#### Why Context in Logs Matters
+**Why Context in Logs Matters**
 
 **Problem**: Minimal logs ("error occurred") are useless for debugging
 
@@ -436,7 +436,7 @@ logging.error(
 {% endstep %}
 
 {% step %}
-#### Correlation as a Debugging Tool
+**Correlation as a Debugging Tool**
 
 **Principle**: Observability correlation shows how metrics, logs, and traces together enable the debugging loop in production.
 
@@ -454,7 +454,7 @@ Modern observability platforms correlate these three data types using shared ide
 {% endstep %}
 
 {% step %}
-#### Error Handling Design = Investigation Design
+**Error Handling Design = Investigation Design**
 
 **Pattern Recognition**: The `failure` library pattern (error chains with context) is what application developers should log, and what your PAM/SSSD/SELinux investigations depend on.
 
@@ -474,7 +474,7 @@ When authentication fails, you need the complete chain of causation. This is deb
 {% endstep %}
 
 {% step %}
-#### "It's Probably Your Code" = "Log Your Systems, Not Just Vendors"
+**"It's Probably Your Code" = "Log Your Systems, Not Just Vendors"**
 
 **Developer Wisdom**: It's usually your code, not the library.
 
@@ -490,7 +490,7 @@ When authentication fails, you need the complete chain of causation. This is deb
 {% endstep %}
 
 {% step %}
-#### "Understand Error Messages" = Know Your Log Schemas
+**"Understand Error Messages" = Know Your Log Schemas**
 
 **Developer Requirement**: Developers must learn what Python's `NameError` means.
 
@@ -514,7 +514,7 @@ Understanding log schemas and error codes is not optional—it's the foundation 
 {% endstep %}
 
 {% step %}
-#### Fast Feedback Loops = Accessible Logs
+**Fast Feedback Loops = Accessible Logs**
 
 **Developer Experience**: Fast feedback enables rapid iteration
 
@@ -537,7 +537,7 @@ This is why you evaluate SIEM architectures, data lakes, and cold storage strate
 
 ***
 
-## 📝 Key Takeaways
+### 📝 Key Takeaways
 
 {% hint style="info" %}
 **Summary: Security Logging & Debugging Integration**
@@ -593,7 +593,7 @@ The relationship is circular and reinforcing—understanding one improves the ot
 
 ***
 
-## 🔗 Additional Resources
+### 🔗 Additional Resources
 
 **Google SRE**
 
