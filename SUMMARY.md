@@ -16,7 +16,7 @@
   * [📢 Security Unit 5 Discussion Post 1](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-1.md)
   * [📢 Security Unit 5 Discussion Post 2](prolug-security-course/session-5-updating-systems-and-patch-cycles/security-unit-5-discussion-post-2.md)
 * [🔎 Session 6: Monitoring and Parsing Logs](prolug-security-course/session-6-monitoring-and-parsing-logs.md)
+  * [🛠️ Session 6 Labs](prolug-security-course/session-6-monitoring-and-parsing-logs/session-6-labs.md)
   * [📢 Security Unit 6 Discussion Post 1](prolug-security-course/session-6-monitoring-and-parsing-logs-1/security-unit-6-discussion-post-1.md)
   * [📢 Security Unit 6 Discussion Post 2](prolug-security-course/session-6-monitoring-and-parsing-logs-1/security-unit-6-discussion-post-2.md)
-  * [sess6\_lab](prolug-security-course/session-6-monitoring-and-parsing-logs/sess6_lab.md)
 * [session\_7\_monitoring\_alerting\_gitbook](prolug-security-course/session_7_monitoring_alerting_gitbook.md)

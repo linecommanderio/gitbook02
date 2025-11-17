@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/lab-ezgif.png
+coverY: -223.29856057849736
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,7 +20,7 @@ layout:
     visible: true
 ---
 
-# sess6\_lab
+# 🛠️ Session 6 Labs
 
 I'm building a comprehensive enterprise logging infrastructure through progressively complex architectures.
 
