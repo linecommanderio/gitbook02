@@ -22,7 +22,19 @@ layout:
 
 # 🛠️ Session 1 Labs
 
-I'm building three progressively complex labs that take me from security assessment through compliance tooling to production hardening. This isn't theoretical—I'm working with the same tools and workflows used in DoD, federal, and enterprise environments.
+I'm building three progressively complex labs that take me from security assessment through compliance tooling to production hardening.
+
+<details>
+
+<summary>🏗️ What We'll Build</summary>
+
+A **security compliance validation workflow** for enterprise Linux systems:
+
+* [ ] System reconnaissance capabilities to understand security-relevant configurations
+* [ ] STIG-based hardening implementation for database services
+* [ ] Professional security baseline documentation and remediation processes
+
+</details>
 
 The progression mirrors real-world security engineering:
 
@@ -55,6 +67,26 @@ The progression mirrors real-world security engineering:
 
 These aren't simulations—I'm using STIG Viewer 2.18 (the official DoD tool), actual STIG benchmarks, and production-equivalent database infrastructure. The commands, validation queries, and documentation practices are exactly what's required in compliance-driven environments.
 {% endhint %}
+
+{% stepper %}
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+{% endstepper %}
 
 ***
 
