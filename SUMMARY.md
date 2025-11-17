@@ -19,4 +19,5 @@
   * [🛠️ Session 6 Labs](prolug-security-course/session-6-monitoring-and-parsing-logs/session-6-labs.md)
   * [📢 Security Unit 6 Discussion Post 1](prolug-security-course/session-6-monitoring-and-parsing-logs-1/security-unit-6-discussion-post-1.md)
   * [📢 Security Unit 6 Discussion Post 2](prolug-security-course/session-6-monitoring-and-parsing-logs-1/security-unit-6-discussion-post-2.md)
-* [🚨 Session 7: Monitoring and Alerting](prolug-security-course/session-7-monitoring-and-alerting.md)
+* [🚨 Session 7: Monitoring and Alerting](prolug-security-course/session-7-monitoring-and-alerting/README.md)
+  * [🛠️ Session 7 Labs](prolug-security-course/session-7-monitoring-and-alerting/session-7-labs.md)
