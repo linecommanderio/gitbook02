@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/Screenshot from 2025-11-17 06-01-04.png
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -15,7 +20,7 @@ layout:
     visible: true
 ---
 
-# Security Unit 2 Discussion Post 1
+# 📢 Security Unit 2 Discussion Post 1
 
 > _**There are 401 STIGs for RHEL 9. If you filter in your STIG viewer for**_ `sysctl` _**there are 33 (mostly network focused),**_ `ssh` _**- 39, and network - 58. Now there are some overlaps between those, but review them and answer these questions.**_
 

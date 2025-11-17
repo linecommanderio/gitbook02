@@ -1,6 +1,28 @@
-# s2d2gb
+---
+cover: ../../.gitbook/assets/Screenshot from 2025-11-17 06-07-09.png
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
 
-Read this: [Part 2: Demystifying and Troubleshooting Name Resolution in Rocky Linux (TL'DR - It's always DNS)](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/)
+# 📢 Security Unit 2 Discussion Post 2
+
+> _**Read this:**_ [Part 2: Demystifying and Troubleshooting Name Resolution in Rocky Linux (TL'DR - It's always DNS)](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/) _**or similar blogs on DNS and host file configurations.**_
 
 ***
 

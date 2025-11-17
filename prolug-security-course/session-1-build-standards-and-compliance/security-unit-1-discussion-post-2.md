@@ -22,7 +22,7 @@ layout:
 
 # 📢 Security Unit 1 Discussion Post 2
 
-Find a STIG or compliance requirement that you do not agree is necessary for a server or service build.
+> _**Find a STIG or compliance requirement that you do not agree is necessary for a server or service build.**_
 
 ### Research References
 
