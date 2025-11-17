@@ -30,9 +30,9 @@ I'm building three progressively complex labs that take me from basic user jaili
 
 A **controlled access infrastructure** for air-gapped systems:
 
-* [ ] A restricted filesystem environment that isolates processes
-* [ ] The _single controlled entry point_ into an air-gapped network
-* [ ] Professional open-source contribution workflow
+* [ ] Build a chroot jail that restricts a process to a limited filesystem environment.
+* [ ] Deploy a complete bastion host that automatically jails incoming users, restricts available actions to a predefined menu, and provides controlled access to isolated networks.
+* [ ] Test bastion effectiveness by attempting to escape restrictions, validate timeout mechanisms, and verify that users have _only_ the capabilities you've explicitly granted.
 
 </details>
 
@@ -40,15 +40,15 @@ A **controlled access infrastructure** for air-gapped systems:
 
 {% stepper %}
 {% step %}
-#### 🔒 User Isolation&#x20;
+#### 🔒 User Isolation → A restricted filesystem environment that isolates processes
 {% endstep %}
 
 {% step %}
-#### 🏰 Bastion Implementation
+#### 🏰 Bastion Implementation → The _single controlled entry point_ into an air-gapped network
 {% endstep %}
 
 {% step %}
-#### 🎯 Enterprise Validation
+#### 🎯 Enterprise Validation → Professional open-source contribution workflow
 {% endstep %}
 {% endstepper %}
 
