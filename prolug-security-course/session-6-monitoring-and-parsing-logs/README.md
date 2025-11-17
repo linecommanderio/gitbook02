@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/sessionn6-ezgif.webp
+cover: ../../.gitbook/assets/sessionn6-ezgif.webp
 coverY: 1.255407779243237
 layout:
   width: default

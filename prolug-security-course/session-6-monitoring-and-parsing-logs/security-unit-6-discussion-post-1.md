@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Security Unit 6 Discussion Post 1
+# 📢 Security Unit 6 Discussion Post 1
 
 ## Security Unit 6 Discussion Post 1
 

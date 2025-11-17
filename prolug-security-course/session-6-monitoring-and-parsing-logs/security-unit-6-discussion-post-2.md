@@ -1,4 +1,21 @@
-# Security Unit 6 Discussion Post 2
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
+# 📢 Security Unit 6 Discussion Post 2
 
 ## Security Unit 6 Discussion Post 2
 
@@ -6,7 +23,7 @@ Read [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-dis
 
 ***
 
-## 📚 Research References
+### 📚 Research References
 
 1. [Monitoring Distributed Systems →](https://sre.google/sre-book/monitoring-distributed-systems/)
 2. [SRE Metrics: Core SRE Components, the Four Golden Signals & SRE KPIs →](https://www.splunk.com/en_us/blog/learn/sre-metrics-four-golden-signals-of-monitoring.html)
@@ -20,7 +37,7 @@ Read [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-dis
 
 ***
 
-## 1️⃣ <mark style="color:$danger;">What interesting or new things do I learn in this reading?</mark>
+### 1️⃣ <mark style="color:$danger;">What interesting or new things do I learn in this reading?</mark>
 
 {% hint style="info" %}
 **Key Learning Areas**
@@ -28,7 +45,7 @@ Read [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-dis
 This reading provides critical insights into Google's production monitoring philosophy, the Four Golden Signals framework, and best practices for managing alert fatigue in distributed systems.
 {% endhint %}
 
-### Eight Core Insights
+#### Eight Core Insights
 
 **1. The Four Golden Signals**
 
@@ -96,7 +113,7 @@ If the answer to any is "no," reconsider the alert.
 
 ***
 
-## 2️⃣ <mark style="color:$danger;">What are the "4 golden signals"?</mark>
+### 2️⃣ <mark style="color:$danger;">What are the "4 golden signals"?</mark>
 
 {% tabs %}
 {% tab title="🚀 Latency" %}
@@ -222,7 +239,7 @@ Saturation is a leading indicator—it predicts problems before they become user
 
 ***
 
-### The Four Golden Signals: Quick Reference
+#### The Four Golden Signals: Quick Reference
 
 | Signal           | What It Measures     | Alert When                    | Example                     |
 | ---------------- | -------------------- | ----------------------------- | --------------------------- |
@@ -233,7 +250,7 @@ Saturation is a leading indicator—it predicts problems before they become user
 
 ***
 
-## 3️⃣ <mark style="color:$danger;">Why is immutability so important to logging?</mark>
+### 3️⃣ <mark style="color:$danger;">Why is immutability so important to logging?</mark>
 
 {% hint style="success" %}
 **Core Principle**
@@ -241,7 +258,7 @@ Saturation is a leading indicator—it predicts problems before they become user
 **Immutability** is central to logging because it ensures logs remain a trustworthy, tamper-proof record of system events, enabling accurate troubleshooting, compliance auditing, and root-cause analysis.
 {% endhint %}
 
-### The Critical Importance of Immutability
+#### The Critical Importance of Immutability
 
 If logs could be edited or deleted after creation, incidents or security breaches could be hidden, and historical traces would lose credibility. Immutability preserves historical integrity and strongly supports forensic investigations by guaranteeing that each log entry reflects exactly what happened at a specific time.
 
@@ -257,7 +274,7 @@ If logs could be edited or deleted after creation, incidents or security breache
 
 ***
 
-## 🔧 Other Required Items for Effective Logging
+#### 🔧 Other Required Items for Effective Logging
 
 {% hint style="info" %}
 **Holistic Approach**
@@ -265,11 +282,11 @@ If logs could be edited or deleted after creation, incidents or security breache
 Effective logging combines immutable records with these best practices so that when incidents occur, teams have reliable, actionable insights for rapid recovery and audit trails for accountability.
 {% endhint %}
 
-### Seven Essential Logging Requirements
+#### Seven Essential Logging Requirements
 
 {% stepper %}
 {% step %}
-### Structured Logging
+**Structured Logging**
 
 Consistency (like using JSON or a standard schema) makes searching, filtering, and automated analysis feasible, especially across distributed systems.
 
@@ -292,7 +309,7 @@ Consistency (like using JSON or a standard schema) makes searching, filtering, a
 {% endstep %}
 
 {% step %}
-### Contextual Metadata
+**Contextual Metadata**
 
 Including timestamps, request IDs, user IDs, and service names enables event correlation and supports debugging distributed flows.
 
@@ -319,13 +336,13 @@ Including timestamps, request IDs, user IDs, and service names enables event cor
 {% endstep %}
 
 {% step %}
-### Centralization
+**Centralization**
 
 Aggregating logs in a single location simplifies search, visualization, and incident response.
 {% endstep %}
 
 {% step %}
-### Log Rotation and Retention Policies
+**Log Rotation and Retention Policies**
 
 Managing storage by archiving or deleting old logs prevents resource exhaustion and supports regulatory or business requirements for data history.
 
@@ -338,7 +355,7 @@ Managing storage by archiving or deleting old logs prevents resource exhaustion 
 {% endstep %}
 
 {% step %}
-### Real-Time Monitoring and Alerting
+**Real-Time Monitoring and Alerting**
 
 Streaming logs and setting up alerts lets teams detect anomalies or failures as they occur, speeding up problem detection and recovery.
 
@@ -350,7 +367,7 @@ Log-based alerts should complement metric-based alerts. Use logs for context whe
 {% endstep %}
 
 {% step %}
-### Appropriate Log Levels
+**Appropriate Log Levels**
 
 Categorizing log entries by severity (INFO, WARN, ERROR, etc.) clarifies priority, allowing teams to focus on the most critical issues first.
 
@@ -364,7 +381,7 @@ Categorizing log entries by severity (INFO, WARN, ERROR, etc.) clarifies priorit
 {% endstep %}
 
 {% step %}
-### Avoiding Sensitive Data
+**Avoiding Sensitive Data**
 
 Scrubbing or encrypting personally identifiable or secret information prevents leaks and supports compliance with privacy regulations.
 
@@ -384,7 +401,7 @@ Scrubbing or encrypting personally identifiable or secret information prevents l
 
 ***
 
-## 📝 Key Takeaways
+### 📝 Key Takeaways
 
 {% hint style="success" %}
 **Summary: Monitoring & Logging Best Practices**
@@ -422,7 +439,7 @@ Scrubbing or encrypting personally identifiable or secret information prevents l
 
 ***
 
-## 🔗 Additional Resources
+### 🔗 Additional Resources
 
 **Google SRE Book**
 
