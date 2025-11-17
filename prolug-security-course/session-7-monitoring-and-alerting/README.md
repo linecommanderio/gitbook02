@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/session7-ezgif.webp
+coverY: -23.59186331749136
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

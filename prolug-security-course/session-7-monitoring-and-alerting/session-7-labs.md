@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/lab-ezgif.png
+coverY: -217.6296730034564
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
