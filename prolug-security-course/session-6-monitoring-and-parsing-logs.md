@@ -1,15 +1,39 @@
-# session\_6\_logs\_and\_parsing
+---
+cover: ../.gitbook/assets/sessionn6-ezgif.webp
+coverY: 1.255407779243237
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
+# 🔎 Session 6: Monitoring and parsing logs
 
 We will focus on **monitoring and parsing logs** as one of the most essential security engineering practices in any production environment.
 
-This session explores how logs are generated, formatted, collected, and analyzed across various layers of the infrastructure stack—from applications to operating systems to networks. You'll gain operational understanding of how to identify log sources, use modern tools for log aggregation and search, and develop awareness of log structure, integrity, and retention requirements.
+This session explores how logs are generated, formatted, collected, and analyzed across various layers of the infrastructure stack.&#x20;
 
-Logs are often the first and best source of truth when diagnosing an incident, auditing a system, or responding to a breach. Without well-structured, searchable, and preserved logs, response teams operate blind to what actually happened.
+You'll gain operational understanding of how to identify log sources, use modern tools for log aggregation and search, and develop awareness of log structure, integrity, and retention requirements.
 
 {% hint style="danger" %}
-**Critical Principle**: Get your logs off your servers in real time.
+**Critical Principle**: **Get your logs off your servers in real time**. This is arguably the most important thing you can do with logs.
 
-This single practice eliminates entire categories of security threats. Even if attackers delete logs locally, the events are already captured remotely. This is arguably the most important thing you can do with logs.
+> _**Even if attackers delete logs locally, the events are already captured remotely.**_
+
+Logs are often the first and best source of truth when diagnosing an incident, auditing a system, or responding to a breach.
 {% endhint %}
 
 ***
@@ -27,7 +51,7 @@ By the end of Session 6, you will have foundational knowledge and skills in:
 5. **Log Integrity**: Understanding how log immutability and integrity contribute to reliable forensics and compliance
 {% endtab %}
 
-{% tab title="🔧 Professional Skills" %}
+{% tab title="👔 Professional Skills" %}
 6. **Operational Thinking**: Learning to think like operators and defenders—ensuring logs are complete, available, immutable, and actionable
 7. **Security Investigation**: Using logs for troubleshooting, security auditing, and incident response
 8. **Pattern Recognition**: Identifying indicators of compromise and predicting future incidents from log patterns
