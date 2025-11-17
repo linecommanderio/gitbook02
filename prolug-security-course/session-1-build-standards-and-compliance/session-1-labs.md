@@ -36,61 +36,40 @@ A **security compliance validation workflow** for enterprise Linux systems:
 
 </details>
 
-The progression mirrors real-world security engineering:
+### ⏳ Lab Progression
 
-<details>
+{% stepper %}
+{% step %}
+#### **🔍 System Reconnaissance** → Discover your system's current security posture
+{% endstep %}
 
-<summary>🔍 Assess</summary>
+{% step %}
+#### **🛡️ STIG Compliance** → Build your security assessment environment
+{% endstep %}
 
-> Discover the system's current security baseline by examining filesystem protections, network configurations, and firewall infrastructure.
-
-</details>
-
-<details>
-
-<summary>⚙️ Prepare</summary>
-
-> Configure industry-standard compliance tools (STIG Viewer) that government and enterprise teams actually use.
-
-</details>
-
-<details>
-
-<summary>🔐 Harden</summary>
-
-> Implement security controls on a live MariaDB database, following the complete remediation cycle: analyze gaps, fix vulnerabilities, document evidence, verify compliance.
-
-</details>
+{% step %}
+#### **🎯 Database Hardening** → Implement security controls on live database infrastructure
+{% endstep %}
+{% endstepper %}
 
 {% hint style="info" %}
 **What Makes This Real**
 
-These aren't simulations—I'm using STIG Viewer 2.18 (the official DoD tool), actual STIG benchmarks, and production-equivalent database infrastructure. The commands, validation queries, and documentation practices are exactly what's required in compliance-driven environments.
+These aren't simulations—I'm using STIG Viewer 2.18 (the official DoD tool), actual STIG benchmarks, and production-equivalent database infrastructure.
+
+> _We're performing actual system security assessments using Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs)._
 {% endhint %}
 
-{% stepper %}
-{% step %}
-###
+By the end, we'll understand:
 
+* The **reconnaissance methodology** (system exploration, configuration discovery, security parameter validation)
+* The **compliance architecture** (STIGs, security controls classification, remediation verification)
 
-{% endstep %}
-
-{% step %}
-###
-
-
-{% endstep %}
-
-{% step %}
-###
-
-
-{% endstep %}
-{% endstepper %}
+More importantly, we'll know how to systematically assess and harden Linux systems against documented security baselines.
 
 ***
 
-## 🏗️ Build these Labs:
+### 🛠️️ Labs to Build Here
 
 {% stepper %}
 {% step %}
@@ -223,10 +202,15 @@ mysql -e "SHOW VARIABLES LIKE '%connection%';"
 {% endstep %}
 {% endstepper %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 🎓 Professional Development
 
-These labs mirror actual enterprise security engineering workflows—from baseline assessment through compliance validation to production hardening. You'll document findings, implement fixes, and verify remediation using the same tools and processes required in government and corporate environments.
+These labs mirror actual enterprise security engineering workflows—from baseline assessment through compliance validation to production hardening.
 
-> **Career Impact:** _Add "STIG remediation experience" and "DoD security compliance implementation" to your resume._
+> _You'll document findings, implement fixes, and verify remediation using the same tools and processes required in government and corporate environments._
+
+**Career Impact**: Add these skills to your project section on your resume:
+
+* **"STIG remediation experience"**
+* **"DoD security compliance implementation"**
 {% endhint %}
