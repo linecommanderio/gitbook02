@@ -31,3 +31,4 @@
   * [🛠️ Session 7 Labs](prolug-security-course/session-7-monitoring-and-alerting/session-7-labs.md)
 * [⚠️ Session 8: Configuration Drift and Remediation](prolug-security-course/session-8-configuration-drift-and-remediation/README.md)
   * [🛠️ Session 8 Labs](prolug-security-course/session-8-configuration-drift-and-remediation/session-8-labs.md)
+* [🔏 Session 9: Certificate and Key Madness](prolug-security-course/session-9-certificate-and-key-madness.md)
