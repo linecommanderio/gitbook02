@@ -28,53 +28,49 @@ layout:
 
 ## 📚 Research References
 
-1. [https://docs.rockylinux.org/guides/security/pam/](https://docs.rockylinux.org/guides/security/pam/)
-2. [https://www.redhat.com/en/blog/pam-%E2%80%93-pluggable-authentication-modules-linux-and-how-edit-defaults](https://www.redhat.com/en/blog/pam-%E2%80%93-pluggable-authentication-modules-linux-and-how-edit-defaults)
-3. [http://www.linux-pam.org/Linux-PAM-html/Linux-PAM\_SAG.html](http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html)
-4. [https://pages.nist.gov/800-63-3/sp800-63b.html](https://pages.nist.gov/800-63-3/sp800-63b.html)
-5. [https://access.redhat.com/documentation/en-us/red\_hat\_enterprise\_linux/9/html/security\_hardening/configuring-authentication\_security-hardening](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/configuring-authentication_security-hardening)
-6. [https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-pam.html](https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-pam.html)
+1. [_https://docs.rockylinux.org/guides/security/pam/_](https://docs.rockylinux.org/guides/security/pam/)
+2. [_https://www.redhat.com/en/blog/pam-%E2%80%93-pluggable-authentication-modules-linux-and-how-edit-defaults_](https://www.redhat.com/en/blog/pam-%E2%80%93-pluggable-authentication-modules-linux-and-how-edit-defaults)
+3. [_http://www.linux-pam.org/Linux-PAM-html/Linux-PAM\_SAG.html_](http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html)
+4. [_https://pages.nist.gov/800-63-3/sp800-63b.html_](https://pages.nist.gov/800-63-3/sp800-63b.html)
+5. [_https://access.redhat.com/documentation/en-us/red\_hat\_enterprise\_linux/9/html/security\_hardening/configuring-authentication\_security-hardening_](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/configuring-authentication_security-hardening)
+6. [_https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-pam.html_](https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-pam.html)
 
 ***
 
-## 🔐 PAM Overview
-
-{% hint style="info" %}
-Pluggable Authentication Modules (PAM)
-
-PAM operates as a system of libraries that dynamically handle the authentication tasks of applications (services) on the system, providing a stable, general interface that privilege-granting programs like `login` or `su` defer to.
-{% endhint %}
-
-### Core PAM Architecture
-
-Separation of Concerns: The core functionality of PAM is separating the tasks of authentication into four independent management groups, often referred to as interfaces or types of calls:
-
-* auth — Authentication Management
-* account — Account Management
-* password — Password Management
-* session — Session Management
-
-Configuration Format:
-
-{% code title="PAM Directive Syntax" overflow="wrap" %}
-```
-mechanism [control] path-to-module [argument]
-```
-{% endcode %}
-
-These groups define the service requested by the calling application, and they correspond to the first field, or Type, in a PAM configuration file directive.
+### 1️⃣ <mark style="color:$danger;">What are the Mechanisms and How Do They Affect PAM Functionality?</mark>
 
 {% hint style="success" %}
-Module Flexibility: An individual module, such as `pam_unix.so`, can provide functionality for any or all four of these interfaces.
+#### **KEY ANSWER**
+
+#### **Pluggable Authentication Modules (PAM)**
+
+PAM operates as a system of libraries that dynamically handle the authentication tasks of applications (services) on the system, providing a stable, general interface that privilege-granting programs like `login` or `su` defer to.
+
+> _**The core functionality of PAM is separating the tasks of authentication into four independent management groups, which are often referred to as interfaces or types of calls:**_ `auth`, `account`, `password`, _**and**_ `session`.
+
+
+
+#### Core PAM Architecture
+
+**Separation of Concerns:** The core functionality of PAM is separating the tasks of authentication into four independent management groups, often referred to as interfaces or types of calls:
+
+* `auth` — Authentication Management
+* `account` — Account Management
+* `password` — Password Management
+* `session` — Session Management
+
+These groups define the service requested by the calling application, and they correspond to the first field, or Type, in a PAM configuration file directive
+
+
+
+> **Configuration Format:** `mechanism [control] path-to-module [argument`]
+
+
+
+**Module Flexibility:** An individual module, such as `pam_unix.so`, can provide functionality for any or all four of these interfaces.
 {% endhint %}
 
-***
 
-## 1️⃣ What are the Mechanisms and How Do They Affect PAM Functionality?
-
-{% hint style="info" %}
-Review `/etc/pam.d/sshd` on a Linux system to understand how these functionalities work in practice.
-{% endhint %}
 
 ### The Four PAM Mechanisms
 
@@ -425,7 +421,7 @@ Example Line: `session required pam_unix.so` manages the session and handles the
 {% endtab %}
 {% endtabs %}
 
-### Real-World Example: /etc/pam.d/sshd
+#### Real-World Example: `/etc/pam.d/sshd`
 
 {% code title="Complete /etc/pam.d/sshd Analysis" overflow="wrap" lineNumbers="true" %}
 ```bash
@@ -499,26 +495,26 @@ Session (`session`):
 
 ***
 
-## 2️⃣ What are the Common PAM Modules?
+### 2️⃣ <mark style="color:$danger;">What are the Common PAM Modules?</mark>
 
 {% hint style="info" %}
 Review `/etc/pam.d/sshd` on a Linux system to see how these modules work in practice.
 {% endhint %}
 
-### Essential PAM Modules
+#### Essential PAM Modules
 
 {% tabs %}
 {% tab title="🔧 pam_unix.so" %}
-**pam\_unix.so - Global Authentication Policy**
+**`pam_unix.so` - Global Authentication Policy**
 
 Functionality: The workhorse of PAM, providing all four PAM module interface types.
 
-| Mechanism | Function                                                                                              |
-| --------- | ----------------------------------------------------------------------------------------------------- |
-| auth      | Prompts for password, checks against `/etc/passwd` and `/etc/shadow`; `nullok` allows blank passwords |
-| account   | Performs account verification: expired accounts, grace periods, password changes needed               |
-| password  | Manages password changes, can create shadow passwords with `shadow` argument                          |
-| session   | Manages session logging to `/var/log/secure`, writes session start/end                                |
+| Mechanism  | Function                                                                                              |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| `auth`     | Prompts for password, checks against `/etc/passwd` and `/etc/shadow`; `nullok` allows blank passwords |
+| `account`  | Performs account verification: expired accounts, grace periods, password changes needed               |
+| `password` | Manages password changes, can create shadow passwords with `shadow` argument                          |
+| `session`  | Manages session logging to `/var/log/secure`, writes session start/end                                |
 
 {% code title="Complete pam_unix.so Usage" overflow="wrap" lineNumbers="true" %}
 ```bash
