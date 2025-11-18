@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/session8-ezgif.webp
+cover: ../../.gitbook/assets/session8-ezgif.webp
 coverY: -14.470028426528357
 layout:
   width: default

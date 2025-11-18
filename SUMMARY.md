@@ -29,4 +29,5 @@
   * [📢 Security Unit 6 Discussion Post 2](prolug-security-course/session-6-monitoring-and-parsing-logs-1/security-unit-6-discussion-post-2.md)
 * [🚨 Session 7: Monitoring and Alerting](prolug-security-course/session-7-monitoring-and-alerting/README.md)
   * [🛠️ Session 7 Labs](prolug-security-course/session-7-monitoring-and-alerting/session-7-labs.md)
-* [⚠️ Session 8: Configuration Drift and Remediation](prolug-security-course/session-8-configuration-drift-and-remediation.md)
+* [⚠️ Session 8: Configuration Drift and Remediation](prolug-security-course/session-8-configuration-drift-and-remediation/README.md)
+  * [🛠️ Session 8 Labs](prolug-security-course/session-8-configuration-drift-and-remediation/session-8-labs.md)
