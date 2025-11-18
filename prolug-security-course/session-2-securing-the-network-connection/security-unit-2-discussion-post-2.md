@@ -28,28 +28,30 @@ layout:
 
 ## 📚 Research References
 
-1. [Part 2: Demystifying and Troubleshooting Name Resolution in Rocky Linux →](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/)
-2. [nsswitch.conf Man Page →](https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html)
-3. [The Most Common DNS Security Risks in 2025 →](https://heimdalsecurity.com/blog/dns-security-risks/)
-4. [What is DNS? - Kaspersky →](https://usa.kaspersky.com/resource-center/definitions/dns)
-5. [16 DNS Attacks You Should Know About →](https://dnsmadeeasy.com/resources/16-dns-attacks-you-should-know-about)
-6. [NIST SP 800-81-2: Secure Domain Name System (DNS) Deployment Guide →](https://csrc.nist.gov/publications/detail/sp/800-81/2/final)
+1. [Part 2: Demystifying and Troubleshooting Name Resolution in Rocky Linux ](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/)
+2. [nsswitch.conf Man Page ](https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html)
+3. [The Most Common DNS Security Risks in 2025 ](https://heimdalsecurity.com/blog/dns-security-risks/)
+4. [What is DNS? - Kaspersky ](https://usa.kaspersky.com/resource-center/definitions/dns)
+5. [16 DNS Attacks You Should Know About ](https://dnsmadeeasy.com/resources/16-dns-attacks-you-should-know-about)
+6. [NIST SP 800-81-2: Secure Domain Name System (DNS) Deployment Guide ](https://csrc.nist.gov/publications/detail/sp/800-81/2/final)
 
 ***
 
-## 1️⃣ What is the Significance of the nsswitch.conf File?
+### 1️⃣ <mark style="color:$danger;">What is the Significance of the</mark> `nsswitch.conf` <mark style="color:$danger;">File?</mark>
 
-{% hint style="info" %}
-**Foundation Understanding**
+{% hint style="success" %}
+**Key Answer**
 
-After researching `man nsswitch.conf`, it's a system-level configuration file (located at `/etc/nsswitch.conf`) that dictates the sources and order from which system functions obtain various categories of name-service information.
+After researching `man nsswitch.conf` ([_man page_](https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html)) it's a system-level configuration file (located at `/etc/nsswitch.conf`) that dictates the sources and order from which system functions obtain various categories of name-service information.
+
+> _**The file is used to determine the sources for information in a range of categories, which are identified by a database name.**_
 {% endhint %}
 
-### Core Concept: The Priority List
+#### Core Concept: The Priority List
 
 {% tabs %}
 {% tab title="📋 Basic Explanation" %}
-**nsswitch.conf: Your System's Information Lookup Strategy**
+**`nsswitch.conf`: Your System's Information Lookup Strategy**
 
 **JSYK (Just So You Know)**:
 
@@ -341,18 +343,35 @@ Result: 10.0.0.50
 
 ***
 
-## 2️⃣ What are Security Problems Associated with DNS and Common Exploits?
+### 2️⃣ <mark style="color:$danger;">What are Security Problems Associated with DNS and Common Exploits?</mark>
 
-{% hint style="danger" %}
-**Critical Security Reality**
+{% hint style="success" %}
+#### **KEY ANSWER**
 
-After researching multiple security blogs, most DNS security problems fall into two main categories:
+> [The Most Common DNS Security Risks in 2025 (And How to Mitigate Them)](https://heimdalsecurity.com/blog/dns-security-risks/)
 
-1. **Network-level exploitation** (used for malicious traffic)
-2. **Local system configuration vulnerabilities** (used for local DoS or compromise of integrity)
+> [What is DNS?](https://usa.kaspersky.com/resource-center/definitions/dns)
+
+> [16 DNS Attacks You Should Know About](https://dnsmadeeasy.com/resources/16-dns-attacks-you-should-know-about)
+
+#### After researching the aforemenitoned blogposts, most DNS security problems fall into two main categories:
+
+1. #### 🕸️ **Network-level exploitation** (_used for malicious traffic_)
+
+* _**Data Exflitration and Command and Control (C2)**_
+* _**Lack of Monitoring and Security Blind Spots**_
+* _**General Denial of Service (DoS)**_
+* _**Network Integrity Risks (ICMP)**_
+
+
+
+2. #### 💻 **Local system configuration vulnerabilities** (_used for local DoS or compromise of integrity_)
+
+* _**Local Name Resolutin Hijacking**_
+* _**Configuration Integrity and Persistance Risks**_
 {% endhint %}
 
-### Security Problem Categories
+#### Security Problem Categories
 
 {% tabs %}
 {% tab title="🌐 Network-Level Exploitation" %}
@@ -1018,9 +1037,9 @@ Risks from improper local system configuration.
 
 ***
 
-## 🛡️ Defense Strategies
+#### 🛡️ Defense Strategies
 
-### Comprehensive DNS Security Controls
+#### Comprehensive DNS Security Controls
 
 {% tabs %}
 {% tab title="🔒 Local System Hardening" %}
@@ -1280,7 +1299,7 @@ EOF
 
 ***
 
-## 📝 Key Takeaways
+### 📝 Key Takeaways
 
 {% hint style="success" %}
 **Summary: DNS Security and nsswitch.conf**
@@ -1387,27 +1406,27 @@ hosts: files myhostname dns
 
 ***
 
-## 🔗 Additional Resources
+### 🔗 Additional Resources
 
 **Name Resolution and nsswitch.conf**
 
-* [nsswitch.conf Man Page →](https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html)
-* [Demystifying Name Resolution in Rocky Linux →](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/)
-* [systemd-resolved Documentation →](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html)
+* [nsswitch.conf Man Page ](https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html)
+* [Demystifying Name Resolution in Rocky Linux ](https://ciq.com/blog/demystifying-and-troubleshooting-name-resolution-in-rocky-linux/)
+* [systemd-resolved Documentation ](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html)
 
 **DNS Security**
 
-* [NIST SP 800-81-2: Secure Domain Name System Deployment Guide →](https://csrc.nist.gov/publications/detail/sp/800-81/2/final)
-* [DNS Security Risks and Mitigation - Heimdal Security →](https://heimdalsecurity.com/blog/dns-security-risks/)
-* [16 DNS Attacks You Should Know About →](https://dnsmadeeasy.com/resources/16-dns-attacks-you-should-know-about)
+* [NIST SP 800-81-2: Secure Domain Name System Deployment Guide ](https://csrc.nist.gov/publications/detail/sp/800-81/2/final)
+* [DNS Security Risks and Mitigation - Heimdal Security ](https://heimdalsecurity.com/blog/dns-security-risks/)
+* [16 DNS Attacks You Should Know About ](https://dnsmadeeasy.com/resources/16-dns-attacks-you-should-know-about)
 
 **DNSSEC and Encrypted DNS**
 
-* [DNSSEC Deployment Guide →](https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en)
-* [DNS-over-TLS (DoT) RFC 7858 →](https://tools.ietf.org/html/rfc7858)
-* [DNS-over-HTTPS (DoH) RFC 8484 →](https://tools.ietf.org/html/rfc8484)
+* [DNSSEC Deployment Guide ](https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en)
+* [DNS-over-TLS (DoT) RFC 7858 ](https://tools.ietf.org/html/rfc7858)
+* [DNS-over-HTTPS (DoH) RFC 8484 ](https://tools.ietf.org/html/rfc8484)
 
 **DNS Monitoring and Threat Detection**
 
-* [DNS Exfiltration Detection Techniques →](https://www.sans.org/white-papers/dns-exfiltration/)
-* [Detecting DNS Tunneling →](https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling)
+* [DNS Exfiltration Detection Techniques ](https://www.sans.org/white-papers/dns-exfiltration/)
+* [Detecting DNS Tunneling ](https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling)

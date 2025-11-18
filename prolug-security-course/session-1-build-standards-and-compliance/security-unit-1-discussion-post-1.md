@@ -32,82 +32,93 @@ layout:
 
 ### <mark style="color:$danger;">1️⃣ Describe the CIA Triad</mark>
 
-{% hint style="info" %}
-**Foundation Understanding**
+{% hint style="success" %}
+#### **KEY ANSWER**
 
-The CIA Triad is like a tripod framework that keeps data "safe" and/or protected. The three legs are **Confidentiality** (_Who can see the data?_), **Integrity** (_Can you trust it?_), and **Availability** (_Can you get it when you need it?_).
+#### The CIA Triad is like a tripod framework that keeps data "safe" and/or protected.&#x20;
+
+> 👁️ _**Confidentiality (Who can see the data?)**_
+
+> ✅ _**Integrity (Can you trust it?)**_
+
+> ⚡ _**Availability (Can you get it when you need it?)**_
 {% endhint %}
 
 #### Official Professional Definitions
 
 {% tabs %}
 {% tab title="🏢 Fortinet" %}
-**Fortinet Definition**
+[**Fortinet Definition**](https://www.fortinet.com/resources/cyberglossary/cia-triad)
 
-"The three letters in "CIA triad" stand for Confidentiality, Integrity, and Availability. The CIA triad is a common model that forms the basis for the development of security systems. They are used for finding vulnerabilities and methods for creating solutions. Ideally, when all three standards have been met, the security profile of the organization is stronger and better equipped to handle threat incidents."
+"The three letters in "CIA triad" stand for Confidentiality, Integrity, and Availability. The CIA triad is a common model that forms the basis for the development of security systems.
+
+They are used for finding vulnerabilities and methods for creating solutions. Ideally, when all three standards have been met, the security profile of the organization is stronger and better equipped to handle threat incidents."
 
 **Confidentiality**
 
-"Confidentiality involves the efforts of an organization to make sure data is kept secret or private. To accomplish this, access to information must be controlled to prevent the unauthorized sharing of data—whether intentional or accidental."
+> _"Confidentiality involves the efforts of an organization to make sure data is kept secret or private._&#x20;
+>
+> * _To accomplish this, access to information must be controlled to prevent the unauthorized sharing of data—whether intentional or accidental."_
 
 **Integrity**
 
-"Integrity involves making sure your data is trustworthy and free from tampering. The integrity of your data is maintained only if the data is authentic, accurate, and reliable."
+> _"Integrity involves making sure your data is trustworthy and free from tampering._
+>
+> * _The integrity of your data is maintained only if the data is authentic, accurate, and reliable."_
 
 **Availability**
 
-"Even if data is kept confidential and its integrity maintained, it is often useless unless it is available to those in the organization and the customers they serve. This means that systems, networks, and applications must be functioning as they should and when they should. Also, individuals with access to specific information must be able to consume it when they need to, and getting to the data should not take an inordinate amount of time."
-
-https://www.fortinet.com/resources/cyberglossary/cia-triad
+> _"Even if data is kept confidential and its integrity maintained, it is often useless unless it is available to those in the organization and the customers they serve._
+>
+> * _This means that systems, networks, and applications must be functioning as they should and when they should._
+> * _Also, individuals with access to specific information must be able to consume it when they need to, and getting to the data should not take an inordinate amount of time."_
 {% endtab %}
 
 {% tab title="🔐 F5" %}
-**F5 Definition**
+[**F5 Definition**](https://www.f5.com/labs/learning-center/what-is-the-cia-triad)
 
 "Together, these three principles form the cornerstone of any organization's security infrastructure; in fact, they (should) function as goals and objectives for every security program."
 
 **Confidentiality**
 
-"Confidentiality can be violated in many ways, for example, through direct attacks designed to gain unauthorized access to systems, applications, and databases in order to steal or tamper with data."
+> _"Confidentiality can be violated in many ways, for example, through direct attacks designed to gain unauthorized access to systems, applications, and databases in order to steal or tamper with data."_
 
 **Integrity**
 
-"Integrity is about ensuring that data has not been tampered with and, therefore, can be trusted. It is correct, authentic, and reliable."
+> _"Integrity is about ensuring that data has not been tampered with and, therefore, can be trusted. It is correct, authentic, and reliable."_
 
 **Availability**
 
-"Availability means that networks, systems, and applications are up and running. It ensures that authorized users have timely, reliable access to resources when they are needed."
-
-https://www.f5.com/labs/learning-center/what-is-the-cia-triad
+> _"Availability means that networks, systems, and applications are up and running._&#x20;
+>
+> * _It ensures that authorized users have timely, reliable access to resources when they are needed."_
 {% endtab %}
 
 {% tab title="🛡️ Palo Alto Networks" %}
-**Palo Alto Networks Definition**
+[**Palo Alto Networks Definition**](https://www.paloaltonetworks.co.uk/cyberpedia/what-is-data-security-management#what-is-the-cia-triads-role-in-data-security-management)
 
 "The CIA Triad refers to three core principles: Confidentiality, Integrity, Availability"
 
 **Confidentiality**
 
-Focuses on limiting access to data based on need and risk. It prevents unauthorized exposure through controls like authentication, encryption, and role-based access.
+> _Focuses on limiting access to data based on need and risk. It prevents unauthorized exposure through controls like authentication, encryption, and role-based access._
 
 **Integrity**
 
-Ensures that data remains accurate and complete. That includes protecting it from unauthorized changes and validating that it hasn't been tampered with.
+> _Ensures that data remains accurate and complete. That includes protecting it from unauthorized changes and validating that it hasn't been tampered with._
 
 **Availability**
 
-Ensures that data remains usable when needed. This requires resilient systems, backup plans, and monitoring to reduce downtime and service disruption.
-
-https://www.paloaltonetworks.co.uk/cyberpedia/what-is-data-security-management#what-is-the-cia-triads-role-in-data-security-management
+> _Ensures that data remains usable when needed. This requires resilient systems, backup plans, and monitoring to reduce downtime and service disruption._
 {% endtab %}
 {% endtabs %}
 
-### <mark style="color:$danger;">2️⃣ Relationship: Authority, Will, and Force</mark>
+### <mark style="color:$danger;">2️⃣ What is the relationship between Authority, Will, and Force as they relate to security?</mark>
 
 {% hint style="success" %}
-**Core Concept**
+#### KEY ANSWER
 
-Authority, Will, and Force shape cybersecurity policies by determining how rules are created, prioritized, and enforced throughout an organization or across government structures.
+#### _**Authority**_, _**Will**_, and _**Force**_ shape cybersecurity policies by determining how rules are created, prioritized, and enforced throughout an organization or across government structures.
 {% endhint %}
 
 #### The Three-Part Relationship
@@ -164,8 +175,8 @@ Authority, Will, and Force shape cybersecurity policies by determining how rules
 
 ### <mark style="color:$danger;">3️⃣ Types of Controls and Their Relation to Authority/Will/Force</mark>
 
-{% hint style="info" %}
-**Big Picture Takeaway**
+{% hint style="success" %}
+#### **KEY ANSWER**
 
 Not All Controls Are Created Equal. Security controls aren't just random technical configurations—they form a structured hierarchy that determines how effective your security posture actually is.
 {% endhint %}
@@ -174,7 +185,7 @@ Not All Controls Are Created Equal. Security controls aren't just random technic
 
 ***
 
-## 🔄 How These Frameworks Work Together
+#### 🔄 How These Frameworks Work Together
 
 {% hint style="success" %}
 **Integration Pattern**
@@ -195,7 +206,7 @@ These frameworks work together to provide complete security understanding:
 | Managerial   | Authority-Based       | ✅ Yes               | 🟡 Medium           |
 | Operational  | Authority-Based       | ✅ Yes               | 🟡 Medium           |
 
-### Mapping Controls to CIA Triad
+#### Mapping Controls to CIA Triad
 
 {% tabs %}
 {% tab title="🔒 Confidentiality" %}
@@ -290,7 +301,7 @@ systemctl enable --now backup.timer
 
 ***
 
-### 📊 Security Control Architecture
+#### 📊 Security Control Architecture
 
 <details>
 

@@ -58,7 +58,11 @@ Think of this like a security camera's memory card that's almost full. The STIG 
 
 **Rule Title**: MariaDB must be configurable to overwrite audit log records, oldest first (First-In-First-Out - FIFO), in the event of unavailability of space for more audit log records.
 
-**Discussion**: It is critical that when MariaDB is at risk of failing to process audit logs as required, it take action to mitigate the failure. Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded. Responses to audit failure depend upon the nature of the failure mode.
+**Discussion**: It is critical that when MariaDB is at risk of failing to process audit logs as required, it take action to mitigate the failure.
+
+Audit processing failures include software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded.
+
+Responses to audit failure depend upon the nature of the failure mode.
 
 **Check Content**: Review the MariaDB configuration to determine if audit logs are configured to overwrite the oldest records when the log reaches capacity.
 
@@ -71,9 +75,9 @@ Think of this like a security camera's memory card that's almost full. The STIG 
 ### <mark style="color:$danger;">1️⃣ What is the STIG Requirement Trying to Do?</mark>
 
 {% hint style="success" %}
-Primary Objective
+#### KEY ANSWER
 
-The requirement aims to ensure continuous audit logging capability by preventing audit system failure when storage space is exhausted.
+#### The requirement aims to ensure continuous audit logging capability by preventing audit system failure when storage space is exhausted.
 {% endhint %}
 
 #### Core Security Goals
@@ -156,11 +160,10 @@ With Automatic Overwrite:
 
 ### <mark style="color:$danger;">2️⃣ What Category and Type of Control Is It?</mark>
 
-{% hint style="info" %}
-Control Classification
+{% hint style="success" %}
+#### KEY ANSWER
 
-Category: Technical Control\
-Type: Corrective Control
+#### Category: Technical Control Type: Corrective Control
 {% endhint %}
 
 #### Control Analysis
@@ -277,10 +280,10 @@ Classification Reality: Security controls often have characteristics of multiple
 
 ### <mark style="color:$danger;">3️⃣ Defense: Why This Requirement May Not Be Necessary</mark>
 
-{% hint style="danger" %}
-Core Argument
+{% hint style="success" %}
+#### KEY ANSWER
 
-Instead of automatically overwriting audit logs (potentially destroying critical forensic evidence), implement proactive capacity management with alerting to prevent storage exhaustion before it occurs.
+#### Instead of automatically overwriting audit logs (potentially destroying critical forensic evidence), implement proactive capacity management with alerting to prevent storage exhaustion before it occurs.
 {% endhint %}
 
 #### Argument Framework
@@ -624,7 +627,7 @@ Recommendation: Implement a combination of proactive alerting, automated archiva
 
 ***
 
-### Additional Considerations
+#### Additional Considerations
 
 #### When FIFO Overwrite Might Be Acceptable
 

@@ -63,13 +63,13 @@ _Note: Some overlap exists between these categories_
 ### <mark style="color:$danger;">1️⃣ As systems engineers, why are we focused on protecting the network portion of our server builds?</mark>
 
 {% hint style="success" %}
-**Key Answer**
+#### **Key Answer**
 
-The network is the primary location where security vulnerabilities are exploited. So as Systems engineers our priority is to configure the interaction between the system and the network, protecting the critical boundry where the systems interact with the outside world.
+#### The network is the primary location where security vulnerabilities are exploited. So as Systems engineers our priority is to configure the interaction between the system and the network, protecting the critical boundary where the systems interact with the outside world.
 
-> _**The point of hardening a system is to lockdown the server to only do the things it should do.**_
+> _**The point of hardening a system is to lock down the server to only do the things it should do.**_
 
-**Availability** of systems is the number KPI in operations. So, making the system not be compromised as easily, we maintain a higher availability.
+#### **Availability** of systems is the number KPI in operations. So, making the system not be compromised as easily, we maintain a higher availability.
 {% endhint %}
 
 #### The Network as Primary Attack Vector
@@ -336,17 +336,17 @@ Difference: 0.73% improvement = ~64 hours additional uptime
 ### <mark style="color:$danger;">2️⃣ Why is it important to understand all the possible ingress points to our servers that exist?</mark>
 
 {% hint style="success" %}
-**Key Answer**
+#### **Key Answer**
 
-Most compromises exploit a connection point that was left unsecured.&#x20;
+#### Most compromises exploit a connection point that was left unsecured.&#x20;
 
 > _**Inventory of ingress points is a necessary prerequisite for effective defense.**_
 
-By being able to identify every ingress point we can:
+#### By being able to identify every ingress point we can:
 
-1. Effectively harden the server
-2. Prevent unauthorized access
-3. Make informed decisions about managing risk.
+1. _**Effectively harden the server**_
+2. _**Prevent unauthorized access**_
+3. _**Make informed decisions about managing risk.**_
 {% endhint %}
 
 #### The Ingress Point Inventory Imperative
@@ -661,17 +661,17 @@ Auth Type Support       : MD5           # ⚠️ Weak authentication
 ### <mark style="color:$danger;">2️⃣-1️⃣ Why is it so important to understand the behaviors of processes that are connecting on those ingress points?</mark>
 
 {% hint style="success" %}
-**Key Answer**
+#### **Key Answer**
 
-Understanding process behaviors is necessary to comprehend what's happening on the server and determine how the system interacts with the network. It's what will allow us to implement technical preventative controls against potential compromises.
+#### Understanding process behaviors is necessary to comprehend what's happening on the server and determine how the system interacts with the network. It's what will allow us to implement technical preventative controls against potential compromises.
 
 > `sysctl` _**is a tool used to modigy the kernel parameters at runtime, which will dictate how the system behaves in real-time.**_
 
-* So, by filtering STIGs for `sysctl` we can identify necessary configurations for hardening. These configurations directy change the way that the kernel behaves with the networking stack in the system.
+* #### So, by filtering STIGs for `sysctl` we can identify necessary configurations for hardening. These configurations directy change the way that the kernel behaves with the networking stack in the system.
 
 > `ssh` _**is a program for logging into a remote machine and for executing commands on a remote machine.**_
 
-* STIGs specific to `ssh` deal with how the protocol and the daemon interact with the system, including how authentication happens via PAM (Pluggable Authentication Modules)
+* #### STIGs specific to `ssh` deal with how the protocol and the daemon interact with the system, including how authentication happens via PAM (Pluggable Authentication Modules)
 {% endhint %}
 
 ### Process Behavior Analysis
@@ -1128,7 +1128,7 @@ Systems Engineering Network Security Approach
 ### 📝 Key Takeaways
 
 {% hint style="success" %}
-**Summary: Network Security Focus in Systems Engineering**
+#### **Summary: Network Security Focus in Systems Engineering**
 
 **Why Network Security is Priority**
 
